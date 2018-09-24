@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="base/base" th:with="currentPage='pacientes'">
+
+<head>
+
+<title>Prontuário - Página Modelo</title>
+
+<style>
+.uppercase {
+	text-transform: uppercase
+}
+</style>
+
+</head>
+
+<section layout:fragment="conteudo">
+
+	<div class="row">
+
+		<!-- BREADCRUMBS - Mostra o caminho até a página atual -->
+
+		<div class="col s12 breadcrumbs valign-wrapper">
+
+			<a th:href="@{/}" class="breadcrumb blue-grey-text"> <i
+				class="material-icons left">home</i>
+			</a> <a th:href="@{/paciente/}" class="breadcrumb blue-grey-text">Pacientes</a>
+
+			<a class="breadcrumb blue-grey-text"
+				th:text="${paciente.id==null} ? Cadastrar : Editar"></a>
+
+		</div>
+
+		<!-- BREADCRUMBS -->
+
+
+		<!-- CONTAINER - Conteiner principal da aplicação -->
+
+		<div class="col s12">
+			<!-- Conteúdo da página ... -->
+
+			<form class="card" th:action="@{/paciente/__${action}__}"
+				method="post" th:object="${paciente}" id="formulario">
+
+
+				<div class="row col s12">
+
+					<div class="row col s12 input-field">
+
+						<span class="grey-text">Origem do Paciente:</span>
+
+					</div>
+
+					<div class="col l4">
+						<label class="col l12"> <input id="demanda_livre"
+							checked="checked" class="validate filled-in" type="radio"
+							value="LIVRE DEMANDA" th:name="tipo_cadastro" /> <span
+							for="demanda_livre">Livre Demanda</span>
+						</label>
+					</div>
+					<div class="col s4 ">
+						<label class="col l12"> <input id="sus" type="radio"
+							class="validate filled-in" value="SUS" th:name="tipo_cadastro" />
+							<span for="sus">SUS</span>
+						</label>
+					</div>
+				</div>
+
+
+				<div class="card-content">
+
+					<div class="row">
+						<div class="col l12 m12 s12">
+							<div class="input-field">
+								<label for="nome">* Nome</label> <input class="uppercase"
+									id="nome" type="text" th:field="*{nome}" required="required" />
+							</div>
+						</div>
+
+						<div class="col l12 m12 s12">
+							<div class="input-field">
+								<label for="nomeDaMae">* Nome da mãe</label> <input
+									class="uppercase" id="nomeDaMae" type="text"
+									th:field="*{nomeDaMae}" required="required" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="data-nascimento">* Data de nascimento</label> <input
+									id="data-nascimento" type="text" th:field="*{nascimento}"
+									class="form-control" autocomplete="off"
+									pattern="\d{1,2}/\d{1,2}/\d{4}" data-mask="99/99/9999"
+									required="required" />
+							</div>
+							<span id="error-data-nascimento" class="no-display"></span>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<select id="sexo" th:field="*{sexo}" required="required">
+									<option value="">Selecione...</option>
+									<option th:each="s : ${sexo}" th:value="${s}"
+										th:text="${s.descricao}" />
+								</select> <label for="sexo">* Sexo</label>
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<select id="raca" th:field="*{raca}">
+									<option value="">Selecione...</option>
+									<option th:each="s : ${raca}" th:value="${s}"
+										th:text="${s.descricao}" />
+								</select> <label for="raca" id="raca_label">Raça</label>
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="nacionalidade" id="nacionalidade_label">Nacionalidade</label>
+								<input class="uppercase" id="nacionalidade" type="text"
+									th:field="*{nacionalidade}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="naturalidade" id="naturalidade_label">Naturalidade</label>
+								<input class="uppercase" id="naturalidade" type="text"
+									th:field="*{naturalidade}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="cpf">CPF</label> <input class="cpf" id="cpf"
+									type="text" th:field="*{cpf}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="cns" id="cns_label">Cartão Nacional do SUS</label> <input
+									name="cns" type="text" title="cns" class="cns" id="cns"
+									onChange="validaCNS(this.value)" th:field="*{cns}" value="cns"
+									maxlength="15"/>
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="profissao">Profissão</label> <input
+									class="uppercase" id="profissao" type="text"
+									th:field="*{profissao}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<select id="estado-civil" th:field="*{estadoCivil}">
+									<option value="">Selecione...</option>
+									<option th:each="ec : ${estadoCivil}" th:value="${ec}"
+										th:text="${ec.descricao}" />
+								</select> <label for="estado-civil">Estado civil</label>
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="responsavel">Responsável</label> <input
+									class="uppercase" id="responsavel" type="text"
+									th:field="*{responsavel}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="telefone">* Telefone</label> <input class="phone" required="required"
+									id="telefone" type="text" th:field="*{telefone}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="telefone">Telefone 2</label> <input class="phone"
+									id="segundo-telefone" type="text" th:field="*{segundoTelefone}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="endereco">Endereço</label> <input class="uppercase"
+									id="endereco" type="text" th:field="*{endereco}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="cep" id="cep_label">CEP</label> <input class="cep"
+									id="cep" type="text" th:field="*{cep}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="bairro">Bairro</label> <input class="uppercase"
+									id="bairro" type="text" th:field="*{bairro}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="cidade" id="cidade_label">Cidade</label> <input
+									class="uppercase" id="cidade" type="text" th:field="*{cidade}" />
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<select id="estado" th:field="*{estado}">
+									<option selected="selected" value="">Selecione...</option>
+									<option th:each="e : ${estado}" th:value="${e}"
+										th:text="${e.descricao}" />
+								</select> <label for="estado" id="estado_label">Estado</label>
+							</div>
+						</div>
+
+						<div class="col l4 m4 s12">
+							<div class="input-field">
+								<label for="pais" id="pais_label">País</label> <input id="pais"
+									class="uppercase" type="text" th:field="*{pais}" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s4">
+						<span class="grey-text">* Campos obrigatórios</span>
+					</div>
+				</div>
+
+				<div class="card-action right-align">
+
+					<a th:href="@{/paciente/}" class="btn btn-flat waves-effect">Cancelar</a>
+					<button type="submit" name="button" value="salvar"
+						class="btn waves-effect waves-light">Salvar</button>
+					<button type="submit" name="button" value="salvaAdicionar"
+						class="btn waves-effect waves-light">Salvar e adicionar
+						outro</button>
+
+				</div>
+			</form>
+
+		</div>
+
+		<!-- CONTAINER -->
+
+	</div>
+
+</section>
+
+<section layout:fragment="js">
+
+	<!-- SCRIPTS - Coloque aqui os scripts desta página -->
+
+	<script>
+		$('#data-nascimento').focusout(function() {
+			validar($('#data-nascimento'), $('#error-data-nascimento'));
+		});
+	</script>
+
+	<script type="text/javascript" th:src="@{/js/paciente/validacaoCNS.js}"></script>
+	<script type="text/javascript"
+		th:src="@{/js/paciente/cadastroPaciente.js}"></script>
+
+</section>
+
+</html>

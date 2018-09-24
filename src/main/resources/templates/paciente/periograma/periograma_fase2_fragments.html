@@ -1,0 +1,2800 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<body>
+		<div th:fragment="fase2" id="fase2" class="card">
+			<div class="card-content no-padding" style="width:1000px; margin: 0 auto;">
+				<!-- Formulário da página toda -->
+				<form action="#">
+					<!-- BEGIN UPPER VESTIBULAR ROW -->
+					<!-- BEGIN UPPER VESTIBULAR MOBILIDADE -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<!-- &nbsp; para deixar a célula preenchida em branco -->
+										<th class="periograma-cell borderless">&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="periograma-cell"><strong>Mobilidade</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											 <th class="periograma-cell">18</th>
+											 <th class="periograma-cell">17</th>
+											 <th class="periograma-cell">16</th>
+											 <th class="periograma-cell">15</th>
+											 <th class="periograma-cell">14</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="periograma-cell"><input type="text" id="mobilidade-18" class="periograma-input" value="0" maxlength="1"></input></td>
+											<td class="periograma-cell"><input type="text" id="mobilidade-17" class="periograma-input" value="0" maxlength="1"></input></td>
+											<td class="periograma-cell"><input type="text" id="mobilidade-16" class="periograma-input" value="0" maxlength="1"></input></td>
+											<td class="periograma-cell"><input type="text" id="mobilidade-15" class="periograma-input" value="0" maxlength="1"></input></td>
+											<td class="periograma-cell"><input type="text" id="mobilidade-14" class="periograma-input" value="0" maxlength="1"></input></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4 ">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											 <th class="periograma-cell">13</th>
+											 <th class="periograma-cell">12</th>
+											 <th class="periograma-cell">11</th>
+											 <th class="periograma-cell">21</th>
+											 <th class="periograma-cell">22</th>
+											 <th class="periograma-cell">23</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-13" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-12" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-11" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-21" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-22" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-23" class="periograma-input" value="0" maxlength="1"></input></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4 ">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											 <th class="periograma-cell">24</th>
+											 <th class="periograma-cell">25</th>
+											 <th class="periograma-cell">26</th>
+											 <th class="periograma-cell">27</th>
+											 <th class="periograma-cell">28</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-24" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-25" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-26" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-27" class="periograma-input" value="0" maxlength="1"></input></td>
+											 <td class="periograma-cell"><input type="text" id="mobilidade-28" class="periograma-input" value="0" maxlength="1"></input></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- BEGIN UPPER VESTIBULAR IMPLANTE -->
+					<div class="row upper-vestibular implante-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Implante </strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_18_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_17_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_16_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_15_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_14_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_13_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_12_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_11_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_21_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_22_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_23_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_24_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_25_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_26_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_27_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell implante clickable-cell">
+												<i id="vestibular_28_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER IMPLANTE -->
+					<!-- BEGIN UPPER FURCA -->
+					<div class="row upper-vestibular furca-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Furca</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-18" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-17" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-16" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-15" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-14" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-13" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-12" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-11" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-21" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-22" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-23" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-24" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-25" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-26" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-27" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-28" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- BEGIN UPPER VESTIBULAR SANGRAMENTO À SONDAGEM -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+											 <div><strong>Sangramento à</strong></div>
+											 <div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-18-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-17-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-16-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-15-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-14-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-13-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-12-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-11-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-21-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-22-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-23-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-24-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-25-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-26-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-27-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-28-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER VESTIBULAR SANGRAMENTO À SONDAGEM -->
+					<!-- BEGIN UPPER VESTIBULAR SUPURAÇÃO -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Supuração</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-18" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-17" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-16" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-15" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-14" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-13" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-12" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-11" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-21" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-22" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-23" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-24" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-25" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-26" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-27" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-28" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER VESTIBULAR SUPURAÇÃO -->
+					<!-- BEGIN UPPER VESTIBULAR RECESSÃO GENGIVAL -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Recessão Gengival</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 upper-vestibular recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-18-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-18-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-18-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-17-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-17-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-17-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-16-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-16-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-16-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-15-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-15-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-15-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-14-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-14-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-14-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-13-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-13-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-13-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-12-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-12-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-12-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-11-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-11-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-11-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-21-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-21-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-21-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-22-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-22-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-22-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-23-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-23-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-23-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-24-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-24-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-24-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-25-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-25-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-25-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-26-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-26-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-26-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-27-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-27-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-27-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-28-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-28-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-recessao-gengival-28-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER VESTIBULAR RECESSÃO GENGIVAL -->
+					<!-- BEGIN UPPER VESTIBULAR PROFUNDIDADE DE SONDAGEM -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+										 	<div><strong>Profundidade de</strong></div>
+										 	<div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 upper-vestibular recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-18-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-18-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-18-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-17-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-17-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-17-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-16-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-16-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-16-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-15-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-15-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-15-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-14-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-14-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-14-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-13-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-13-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-13-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-12-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-12-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-12-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-11-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-11-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-11-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-21-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-21-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-21-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-22-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-22-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-22-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-23-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-23-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-23-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-24-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-24-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-24-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-25-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-25-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-25-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-26-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-26-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-26-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-27-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-27-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-27-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-28-1" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-28-2" class="periograma-input col l4" value="0" maxlength="1"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-28-3" class="periograma-input col l4" value="0" maxlength="1"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER VESTIBULAR PROFUNDIDADE DE SONDAGEM -->
+					<!-- END UPPER VESTIBULAR ROW -->
+					<!-- BEGIN UPPER VESTIBULAR FACES -->
+					<div class="row">
+						<div class="col l2">
+							<p class="periograma-bigger center"><strong>Vestibular</strong></p>
+						</div>
+						<div class="col l10 teeth-svg-container" style="position:relative;">
+							<div id="upper-teeth-vestibular" style="width: 839px; height: 166px;"></div>
+							<div class="graph" id="canvas-upper-teeth-vestibular" style="position: absolute; top: 3.4px;"></div>
+						</div>
+					</div>
+					<!-- END UPPER VESTIBULAR FACES -->
+					<!-- BEGIN UPPER PALATINA FACES -->
+					<div class="row">
+						<div class="col l2">
+							<p class="periograma-bigger center"><strong>Palatina</strong></p>
+						</div>
+						<div class="col l10 teeth-svg-container" style="position: relative;">
+							<div id="upper-teeth-palatina" style="width: 839px; height: 166px;"></div>
+							<div class="graph" id="canvas-upper-teeth-palatina" style="position: absolute; top: 6px;"></div>
+						</div>
+					</div>
+					<!-- END UPPER PALATINA FACES -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+										 	<div><strong>Profundidade de</strong></div>
+										 	<div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+		
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 upper-palatina recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-18-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-18-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-18-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-17-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-17-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-17-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-16-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-16-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-16-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-15-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-15-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-15-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-14-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-14-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-14-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-13-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-13-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-13-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-12-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-12-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-12-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-11-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-11-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-11-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-21-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-21-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-21-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-22-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-22-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-22-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-23-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-23-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-23-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-24-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-24-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-24-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-25-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-25-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-25-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-26-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-26-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-26-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-27-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-27-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-27-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-profundidade-sondagem-28-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-28-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-profundidade-sondagem-28-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Recessão Gengival</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 upper-palatina recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-18-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-18-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-18-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-17-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-17-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-17-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-16-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-16-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-16-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-15-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-15-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-15-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-14-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-14-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-14-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-13-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-13-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-13-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-12-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-12-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-12-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-11-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-11-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-11-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-21-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-21-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-21-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-22-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-22-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-22-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-23-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-23-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-23-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-24-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-24-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-24-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-25-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-25-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-25-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-26-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-26-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-26-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-27-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-27-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-27-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="palatina-recessao-gengival-28-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-28-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="palatina-recessao-gengival-28-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Supuração</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supuracao-18" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-17" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-16" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-15" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-14" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supuracao-13" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-12" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-11" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-21" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-22" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-23" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supuracao-24" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-25" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-26" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-27" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supuracao-28" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+											 <div><strong>Sangramento à</strong></div>
+											 <div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-18-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-17-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-16-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-15-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-14-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-13-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-12-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-11-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-21-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-22-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-23-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-24-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-25-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-26-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-27-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-28-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row upper-palatina furca-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Furca</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-18-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-18-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-17-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-17-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-16-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-16-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-15-esquerda" class="responsive-img furca doubled disabled"></img>
+											 		<img id="furca-15-direita" class="responsive-img furca doubled disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-14-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-14-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-13" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-12" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-11" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-21" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-22" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-23" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-24-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-24-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-25-esquerda" class="responsive-img furca doubled disabled"></img>
+											 		<img id="furca-25-direita" class="responsive-img furca doubled disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-26-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-26-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-27-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-27-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-28-esquerda" class="responsive-img furca doubled"></img>
+											 		<img id="furca-28-direita" class="responsive-img furca doubled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- BEGIN UPPER NOTA -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Nota</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END UPPER NOTA -->
+					<!-- BEGIN CALCULATED VALUES -->
+					<div class="row">
+						<div class="col l10 offset-l2 bordered-div">
+							<div class="col l12">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											<th class="periograma-cell borderless"><strong>Média de Profundidade de Sondagem</strong></th>
+											<th class="periograma-cell borderless"><strong>Média do Nível de Inserção</strong></th>
+											<th class="periograma-cell borderless"><strong>Sangramento à Sondagem(%)</strong></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="periograma-cell borderless"><strong><span id="media-profundidade-sondagem">10</span>mm</strong></td>
+											<td class="periograma-cell borderless"><strong><span id="media-nivel-insercao">30</span>mm</strong></td>
+											<td class="periograma-cell borderless"><strong><span id="porcentagem-sangramento-sondagem">88</span>%</strong></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END CALCULATED VALUES-->
+					<!-- BEGIN BOTTOM NOTA -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Nota</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input"></input></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END BOTTOM NOTA -->
+					<!-- BEGIN LINGUAL FURCA-->
+					<div class="row lower-lingual furca-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Furca</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-48" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-47" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-46" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-45" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-44" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-43" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-42" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-41" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-31" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-32" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-33" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-34" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-35" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-36" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-37" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell clickable-cell-furca">
+											 	<label class="col l12">
+											 		<img id="furca-38" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END LINGUAL FURCA -->
+					<!-- BEGIN LINGUAL SANGRAMENTO À SONDAGEM -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+											 <div><strong>Sangramento à</strong></div>
+											 <div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-18-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-17-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-16-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-15-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-14-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-13-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-12-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-11-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-21-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-22-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-23-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-24-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-25-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-26-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-27-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-28-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Supuração</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-18" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-17" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-16" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-15" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-14" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-13" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-12" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-11" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-21" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-22" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-23" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-24" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-25" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-26" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-27" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-28" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Recessão Gengival</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 lower-lingual recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-48-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-48-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-48-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-47-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-47-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-47-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-46-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-46-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-46-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-45-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-45-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-45-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-44-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-44-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-44-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-43-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-43-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-43-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-42-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-42-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-42-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-41-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-41-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-41-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-31-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-31-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-31-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-32-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-32-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-32-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-33-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-33-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-33-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-34-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-34-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-34-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-35-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-35-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-35-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-36-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-36-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-36-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-37-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-37-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-37-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-recessao-gengival-38-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-38-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-recessao-gengival-38-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+										 	<div><strong>Profundidade de</strong></div>
+										 	<div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+		
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 lower-lingual recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-48-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-48-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-48-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-47-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-47-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-47-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-46-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-46-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-46-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-45-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-45-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-45-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-44-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-44-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-44-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-43-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-43-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-43-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-42-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-42-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-42-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-41-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-41-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-41-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-31-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-31-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-31-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-32-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-32-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-32-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-33-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-33-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-33-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-34-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-34-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-34-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-35-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-35-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-35-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-36-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-36-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-36-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-37-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-37-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-37-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="lingual-profundidade-sondagem-38-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-38-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="lingual-profundidade-sondagem-38-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END LINGUAL SANGRAMENTO À SONDAGEM -->
+					<!-- BEGIN LINGUAL AND VESTIBULAR FACES -->
+					<div class="row">
+						<div class="col l2">
+							<p class="periograma-bigger center"><strong>Lingual</strong></p>
+						</div>
+						<div class="col l10 teeth-svg-container" style="position: relative;">
+							<div id="lower-teeth-lingual" style="width: 839px; height: 166px;"></div>
+							<div class="graph" id="canvas-lower-teeth-lingual" style="position: absolute; top: 5px;"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<p class="periograma-bigger center"><strong>Vestibular</strong></p>
+						</div>
+						<div class="col l10 teeth-svg-container" style="position: relative;">
+							<div id="lower-teeth-vestibular" style="width: 839px; height: 166px;"></div>
+							<div class="graph" id="canvas-lower-teeth-vestibular" style="position: absolute; top: 5px;"></div>
+						</div>
+					</div>
+					<!-- END LINGUAL AND VESTIBULAR FACES -->
+					<!-- END UPPER PALATINA FACES -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+										 	<div><strong>Profundidade de</strong></div>
+										 	<div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+		
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 lower-vestibular recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-48-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-48-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-48-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-47-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-47-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-47-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-46-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-46-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-46-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-45-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-45-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-45-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-44-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-44-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-44-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-43-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-43-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-43-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-42-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-42-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-42-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-41-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-41-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-41-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-31-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-31-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-31-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-32-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-32-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-32-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-33-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-33-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-33-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table  double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-34-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-34-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-34-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-35-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-35-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-35-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-36-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-36-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-36-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-37-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-37-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-37-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-profundidade-sondagem-38-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-38-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-profundidade-sondagem-38-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Recessão Gengival</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10 lower-vestibular recessao-profundidade-input-container">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-48-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-48-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-48-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-47-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-47-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-47-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-46-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-46-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-46-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-45-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-45-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-45-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-44-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-44-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-44-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-43-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-43-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-43-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-42-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-42-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-42-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-41-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-41-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-41-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-31-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-31-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-31-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-32-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-32-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-32-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-33-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-33-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-33-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-34-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-34-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-34-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-35-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-35-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-35-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-36-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-36-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-36-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-37-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-37-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-37-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+											<td class="periograma-cell">
+												<input type="text" id="vestibular-recessao-gengival-38-1" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-38-2" class="periograma-input col l4" value="0" maxlength="3"></input>
+												<input type="text" id="vestibular-recessao-gengival-38-3" class="periograma-input col l4" value="0" maxlength="3"></input>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Supuração</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-18" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-17" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-16" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-15" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-14" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-13" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-12" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-11" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-21" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-22" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-23" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-24" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-25" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-26" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-27" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="supupuracao-28" class="material-icons supuracao periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell force-wrap">
+											 <div><strong>Sangramento à</strong></div>
+											 <div><strong>Sondagem</strong></div>
+										 </th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-18-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-18-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-17-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-17-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-16-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-16-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-15-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-15-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-14-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-14-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-13-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-13-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-12-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-12-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-11-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-11-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-21-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-21-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-22-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-22-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-23-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-23-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table double-height">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="sangramento-sondagem-24-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-24-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-25-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-25-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-26-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-26-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-27-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-27-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell">
+												<i id="sangramento-sondagem-28-1" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-2" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+												<i id="sangramento-sondagem-28-3" class="material-icons sangramento-sondagem periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row lower-vestibular furca-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Furca</strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-48" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-47" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-46" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-45" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-44" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-43" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-42" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-41" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-31" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-32" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-33" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-34" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-35" class="responsive-img furca disabled"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-36" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-37" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+											 <td class="periograma-cell">
+											 	<label class="col l12">
+											 		<img id="furca-38" class="responsive-img furca"></img>
+											 	</label>
+											 </td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="row lower-vestibular implante-cell-container">
+						<div class="col l2">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										 <th class="periograma-cell"><strong>Implante </strong></th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="vestibular_48_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_47_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_46_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_45_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_44_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="vestibular_43_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_42_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_41_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_31_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_32_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_33_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell clickable-cell">
+												<i id="vestibular_34_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_35_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_36_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_37_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+						        			<td class="periograma-cell clickable-cell">
+												<i id="vestibular_38_implante" class="material-icons periograma-icon">check_box_outline_blank</i>
+						        			</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- BEGIN BOTTOM VESTIBULAR ROW -->
+					<div class="row">
+						<div class="col l2">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										 <th class="periograma-cell"><strong>Mobilidade </strong></th>
+									</tr>
+								</thead>
+							</table>
+						</div>
+						<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+										</tr>
+									</thead>
+		
+									<tbody>
+										<tr>
+											 <th class="periograma-cell">48</th>
+											 <th class="periograma-cell">47</th>
+											 <th class="periograma-cell">46</th>
+											 <th class="periograma-cell">45</th>
+											 <th class="periograma-cell">44</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4 ">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+										</tr>
+									</thead>
+		
+									<tbody>
+										<tr>
+											 <th class="periograma-cell">43</th>
+											 <th class="periograma-cell">42</th>
+											 <th class="periograma-cell">41</th>
+											 <th class="periograma-cell">31</th>
+											 <th class="periograma-cell">32</th>
+											 <th class="periograma-cell">33</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4 ">
+								<table class="mf-table">
+									<thead>
+										<tr>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+											<th class="periograma-cell"><input type="text" class="periograma-input" value="0" maxlength="1"></input></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											 <th class="periograma-cell">34</th>
+											 <th class="periograma-cell">35</th>
+											 <th class="periograma-cell">36</th>
+											 <th class="periograma-cell">37</th>
+											 <th class="periograma-cell">38</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- END BOTTOM VESTIBULAR ROW -->
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

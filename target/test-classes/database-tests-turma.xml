@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<!-- Alunos -->
+	<aluno id="1" nome="aluno 1" email="aluno1@email.com" matricula="1111" ano_ingresso="2013" semestre_ingresso="1" senha="$04$f.CAvVzvU3ZeaES2mIkh3uc7e6u6pJOh3bGAxGttOuu/r2MzYuvN6" />
+	<aluno id="2" nome="aluno 2" email="aluno2@email.com" matricula="2222" ano_ingresso="2013" semestre_ingresso="2" senha="$04$f.CAvVzvU3ZeaES2mIkh3uc7e6u6pJOh3bGAxGttOuu/r2MzYuvN6" />
+	<aluno id="3" nome="aluno 3" email="aluno3@email.com" matricula="3333" ano_ingresso="2014" semestre_ingresso="1" senha="$04$f.CAvVzvU3ZeaES2mIkh3uc7e6u6pJOh3bGAxGttOuu/r2MzYuvN6" />
+	<aluno id="8" nome="aluno 8" email="aluno8@email.com" matricula="8888" ano_ingresso="2018" semestre_ingresso="2" senha="$04$f.CAvVzvU3ZeaES2mIkh3uc7e6u6pJOh3bGAxGttOuu/r2MzYuvN6" />
+
+	<!-- Disciplina -->
+	<disciplina id="1" codigo="1" nome="disciplina1" />
+	<disciplina id="2" codigo="2" nome="disciplina2" />
+
+	<!-- Turmas -->
+	<turma id="1" ano="2016" semestre="1" nome="Turma 1" disciplina_id="1" ativo="true" />
+	<turma id="2" ano="2016" semestre="2" nome="Turma 2" disciplina_id="2" ativo="false" />
+	<turma id="3" ano="2016" semestre="2" nome="Turma 3" disciplina_id="2" ativo="true" />
+
+	<!-- Servidores -->
+	<servidor id="101" nome="professor 1" email="professor1@email.com" matricula="1111" senha="1111" />
+	<servidor id="102" nome="professor 2" email="professor2@email.com" matricula="2222" senha="2222" />
+	<servidor id="103" nome="servidor 3" email="servidor3@email.com" matricula="103333" senha="103333" />
+
+
+	<!-- Professores da Turma -->
+	<turma_professores professores_id="101" turma_id="1" />
+	<turma_professores professores_id="102" turma_id="1" />
+	<turma_professores professores_id="102" turma_id="2" />
+
+
+	<!-- Pacientes -->
+	<paciente id="1" nome="Paciente 1" cpf="12345678900" nome_da_mae="Mãe do Paciente 1" nascimento="2018-10-06 13:30:00" sexo="M" telefone="(88)9999-8888" />
+	<paciente id="2" nome="Paciente 2" cpf="12345678900" nome_da_mae="Mãe do Paciente 2" nascimento="2018-10-06 13:30:00" sexo="F" telefone="(88)9999-8888" />
+
+
+	<!-- Atendimentos -->
+	<atendimento id="1" data="2001-01-01 00:00:00" status="EM_ANDAMENTO" paciente_id="1" responsavel_id="2" ajudante_id="1" professor_id="101" turma_id="1" />
+	<atendimento id="2" data="2016-10-06 13:30:00" status="REALIZADO" paciente_id="1" responsavel_id="2" ajudante_id="2" professor_id="101" turma_id="1" />
+
+
+	<!-- Alunos na Turma -->
+	<aluno_turma ativo="true" turma_id="1" aluno_id="1" />
+	<aluno_turma ativo="true" turma_id="1" aluno_id="2" />
+	<aluno_turma ativo="true" turma_id="2" aluno_id="1" />
+	<aluno_turma ativo="true" turma_id="2" aluno_id="2" />
+	<aluno_turma ativo="true" turma_id="1" aluno_id="3" />
+	<aluno_turma ativo="true" turma_id="2" aluno_id="3" />
+
+
+	<!-- Papel do usuário -->
+	<papel_usuario usuario_id="1" papel="ESTUDANTE" />
+	<papel_usuario usuario_id="2" papel="ESTUDANTE" />
+	<papel_usuario usuario_id="3" papel="ESTUDANTE" />
+	<papel_usuario usuario_id="101" papel="PROFESSOR" />
+	<papel_usuario usuario_id="102" papel="PROFESSOR" />
+	<papel_usuario usuario_id="103" papel="ADMINISTRACAO" />
+
+</dataset>

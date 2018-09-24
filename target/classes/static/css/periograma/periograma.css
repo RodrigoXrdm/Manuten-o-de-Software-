@@ -1,0 +1,67 @@
+.periograma-cell{
+	height: 1.5rem !important;
+	text-align: center;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+.periograma-input{
+	height: 1rem !important;
+	padding: 0px !important;
+	border: 0px !important;
+	margin: 0px !important;
+	font-size: 1em !important;
+	text-align: center;
+}
+.bordered-div {
+	border: 5px solid #aaa;
+}
+.borderless {
+	border: none !important;
+}
+.periograma-input:disabled {
+	background-color: #ccc;
+}
+.periograma-bigger{
+	font-size:1.5em;
+}
+.span-titulo{
+	color: #9e9e9e;	
+}
+.psr{
+	padding: 1.5em !important;
+}
+.legenda{
+	color: #9e9e9e;
+	font-size:small;
+}
+
+
+/* PLACA BACTERIANA */
+.placa-bacteriana {
+	line-height: 0;
+}
+.placa-bacteriana .ln {
+	margin: 0;
+	display: inline-flex;
+}
+
+.placa-bacteriana .ln i {
+	font-size: 1.2rem;
+}
+
+.placa-bacteriana .ln:nth-child(2) i:first-child {
+	margin-right: 12px;
+}
+
+.middle-cell .placa-bacteriana .ln:nth-child(2) i:first-child {
+	margin-right: 4px;
+}
+
+.teeth-svg-container svg {
+	margin-top: 2px;
+}
+
+.responsive-img.furca.disabled {
+	cursor: not-allowed;
+}

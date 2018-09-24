@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 	 -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="paciente/detalhes-base"
+	th:with="currentPage='pacientes',currentSubPage='periograma'"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+<link type="text/css" rel="stylesheet"
+	th:href="@{/css/paciente/periograma/periograma.css}" />
+</head>
+
+
+<section layout:fragment="tab-content">
+
+	<div class="card">
+		<div class="card-content">
+			<form id="form-periograma" th:action="@{/periograma/cadastrar-periograma/} + ${paciente.id}" method="post"> 
+				<div class="row">
+					<div class="col s3 offset-m2 m2">
+						<label> 
+							<input th:if="${periograma != null and periograma.status.descricao == 'Exame Inicial'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="EXAME_INICIAL" 
+							checked="checked"/>
+							<input th:unless="${periograma != null and periograma.status.descricao == 'Exame Inicial'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="EXAME_INICIAL"/>
+							<span>
+								<strong>Exame Inicial</strong>
+							</span>
+						</label>
+					</div>
+					<div class="col s3 m2">
+						<label> 
+							<input th:if="${periograma != null and periograma.status.descricao == 'Reavaliação'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="REAVALIACAO" 
+							checked="checked"/>
+							<input th:unless="${periograma != null and periograma.status.descricao == 'Reavaliação'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="REAVALIACAO"/>
+							<span>
+								<strong>Reavaliação</strong>
+							</span>
+						</label>
+					</div>
+					<div class="col s3 m2">
+						<label> 
+							<input th:if="${periograma != null and periograma.status.descricao == 'Manutenção'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="MANUTENCAO" 
+							checked="checked"/>
+							<input th:unless="${periograma != null and periograma.status.descricao == 'Manutenção'}" 
+							th:attrappend="data-periograma=${periograma != null}?${periograma.id}"
+							class="status-periograma" 
+							name="status" 
+							type="radio" 
+							value="MANUTENCAO"/>
+							<span>
+								<strong>Manutenção</strong>
+							</span>
+						</label>
+					</div>
+
+					<button th:if="${periogramaJaCadastrado} == false" type="submit" id="periograma_btn_novo" class="btn-large col s2">NOVO</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
+
+	<ul id="tabs-swipe-demo" class="tabs">
+		<li class="tab col s6"><a class="active" href="#fase1">Fase 1</a></li>
+		<li class="tab col s6"><a href="#fase2">Fase 2</a></li>
+	</ul>
+
+	<div
+		th:replace="paciente/periograma/periograma_fase1_fragments :: fase1"></div>
+	<div
+		th:replace="paciente/periograma/periograma_fase2_fragments :: fase2"></div>
+	<div
+		th:replace="paciente/periograma/periograma_fase1_fragments :: modal-psr"></div>
+	<div
+		th:replace="paciente/periograma/periograma_fase1_fragments :: modal-outros-fatores"></div>
+</section>
+
+<section layout:fragment="js-paciente">
+
+	<!-- SCRIPTS - Coloque aqui os scripts desta página -->
+	<script th:src="@{/material/plugins/pubsub/pubsub.js}"></script>
+	<script th:src="@{/js/libs/jquery-svg/jquery.svg.js}"></script>
+	<script th:src="@{/js/libs/svg-js/svg.min.js}"></script>
+	<script type="text/javascript" th:src="@{/js/paciente/detalhes.js}"></script>
+	<script type="text/javascript" th:src="@{/js/paciente/periograma/periograma.js}"></script>
+	<script type="text/javascript" th:src="@{/js/paciente/periograma/periogramaFase1Ajax.js}"></script>
+
+</section>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="base/base"
+	th:with="currentPage='registros', registroId=${registro.id}">
+
+<head>
+
+<title>Prontuário - Página Modelo</title>
+
+</head>
+
+<section layout:fragment="conteudo">
+
+	<div class="row">
+
+		<!-- BREADCRUMBS - Mostra o caminho até a página atual -->
+
+		<div class="col s12 breadcrumbs valign-wrapper">
+
+			<a th:href="@{/}" class="breadcrumb blue-grey-text"> <i
+				class="material-icons left">home</i>
+			</a> <a sec:authorize="hasAuthority('ADMINISTRACAO')"
+				th:href="@{/registro/listar}" class="breadcrumb blue-grey-text">Registros</a>
+
+			<a sec:authorize="!hasAuthority('ADMINISTRACAO')"
+				class="breadcrumb blue-grey-text">Registros</a> <a
+				class="breadcrumb blue-grey-text">Detalhes</a>
+
+		</div>
+
+		<!-- BREADCRUMBS -->
+
+
+		<!-- CONTAINER - Conteiner principal da aplicação -->
+
+		<div class="col s12">
+			<!-- Conteúdo da página ... -->
+
+
+			<div class="card">
+				<div class="card-content">
+					<div class="row">
+						<div class="col l6 no-padding">
+							<span class="bold-text grey-text text-darken-3">Data: </span> <span
+								class="light-text text-18 truncate"
+								th:text="${#dates.format(registro.data, 'dd/MM/yyyy - HH:mm:ss')}">
+							</span>
+						</div>
+						<div class="col l6 no-padding">
+							<span class="bold-text grey-text text-darken-3">Ação
+								Realizada: </span> <span class="light-text text-18 truncate"> <span
+								th:text="${registro.tipoAcao.descricao}" class=""></span>
+							</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-content">
+					<div class="row no-margin">
+						<div class="col l12 no-padding">
+							<span class="bold-text grey-text text-darken-3">Usuário
+								responsável: </span>
+
+							<div class="card-content">
+
+								<div class="row">
+									<div class="col l4 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Nome:</span> <span
+											class="light-text text-18 truncate" th:text="${usuario.nome}"></span>
+									</div>
+									<div class="col l4 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">E-mail:</span>
+										<span class="light-text text-18 truncate"
+											th:text="${usuario.email}"></span>
+									</div>
+									<div class="col l4 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Matricula/Siape:</span>
+										<span class="light-text text-18 truncate"
+											th:text="${usuario.matricula}"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-content">
+					<div class="row no-margin">
+						<div class="col l12 no-padding">
+							<span class="bold-text grey-text text-darken-3">Paciente:
+							</span>
+
+							<div class="card-content">
+
+								<div class="row">
+									
+									<div class="col l6 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Nome:</span> <span
+											class="light-text text-18 truncate"
+											th:text="${paciente.nome}"></span>
+									</div>
+
+									<div class="col l6 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Data de
+											nascimento:</span> <span class="light-text text-18 truncate"
+											th:text="${#dates.format(paciente.nascimento, 'dd/MM/yyyy')}"></span>
+									</div>
+
+
+								</div>
+
+								<div class="row">
+									
+												
+									<div class="col l6 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Sexo:</span> <span
+											class="light-text text-18 truncate"
+											th:text="${paciente.sexo.descricao}"></span>
+									</div>
+									
+									<div class="col l6 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">Naturalidade:</span> <span
+											class="light-text text-18 truncate"
+											th:text="${paciente.naturalidade}"></span>
+									</div>
+									
+									<div class="col l6 m4 s12 no-padding">
+										<span class="bold-text grey-text text-darken-3">CPF:</span> <span
+											class="light-text text-18 truncate"
+											th:text="${paciente.cpf}"></span>
+									</div>
+									
+											
+							
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="card" th:if="${observacao != ''}">
+				<div class="card-content">
+					<div class="row no-margin">
+						<div class="col l12 no-padding" th:utext="${observacao}">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+		</div>
+
+		<!-- CONTAINER -->
+
+	</div>
+</section>
+
+<section layout:fragment="js">
+
+	<!-- SCRIPTS - Coloque aqui os scripts desta página -->
+	<script type="text/javascript" th:src="@{/js/aluno/listagem.js}"></script>
+
+</section>
+
+</html>

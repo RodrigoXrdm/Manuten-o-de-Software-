@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="base/base" th:with="currentPage='cadastrar-tipos-procedimento'">
+
+	<head>
+	
+	    <title>Prontuário - Página Modelo</title>
+	    
+	</head>
+
+	<section layout:fragment="conteudo">
+		
+		<div class="row">
+		
+			<!-- BREADCRUMBS - Mostra o caminho até a página atual -->
+			
+			<div class="col s12 breadcrumbs valign-wrapper">
+	            
+	            <a th:href="@{/}" class="breadcrumb blue-grey-text">
+	                <i class="material-icons left">home</i>
+	            </a>
+	            
+	            <a th:href="@{/tipo-procedimento/listar}" class="breadcrumb blue-grey-text">Procedimentos</a>
+	            
+	            <a class="breadcrumb blue-grey-text" th:text="${tipoProcedimento.id==null} ? Cadastrar : Editar"></a>
+	            
+	        </div>
+	        
+	        <!-- BREADCRUMBS -->
+			
+	
+			<!-- CONTAINER - Conteiner principal da aplicação -->
+			
+		    <div class="col s12">
+		    
+			<!-- BEGIN FORM --> 
+			<form sec:authorize="hasAuthority('ADMINISTRACAO')" class="card" th:action="@{/tipo-procedimento/adicionar}"
+				th:object="${tipoProcedimento}" method="post">
+				<input type="hidden" th:field="*{id}" />
+				<div class="card-content">
+					<div class="row">
+						<div class="col l3 m3 s3">
+							<div class="input-field">
+								<label for="codIdentificador">Código identificador<span class="red-text">*</span></label>
+								<input type="text"
+									th:field="*{codIdentificador}" class="form-control only-numbers" id="codIdentificador" required="required" />
+							</div>
+						</div>
+						<div class="col l5 m5 s5">
+							<div class="input-field">
+								<label for="nome">Nome<span class="red-text">*</span></label>
+								<input type="text"
+									th:field="*{nome}" class="form-control" id="nome" required="required" />
+							</div>
+						</div>
+						<div class="col l8 m8 s8">
+							<div class="input-field">
+								<label for="descricao">Descrição<span class="red-text">*</span></label>
+								<input type="text"
+									th:field="*{descricao}" class="form-control" id="descricao" required="required" />
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<span class="grey-text"><span class="red-text">*</span>Campos obrigatórios</span>
+					</div>
+				</div>
+
+				<div class="card-action right-align">
+					<button type="submit" class="btn waves-effect waves-light">Salvar</button>
+				</div>
+
+			</form>
+			<!-- END FORM -->
+ 
+			 </div>
+		    	        	   
+		    <!-- CONTAINER -->
+		    
+		</div>
+		
+	</section>
+
+	<section layout:fragment="js">
+	
+		<!-- SCRIPTS - Coloque aqui os scripts desta página -->
+			
+	</section>
+
+</html>

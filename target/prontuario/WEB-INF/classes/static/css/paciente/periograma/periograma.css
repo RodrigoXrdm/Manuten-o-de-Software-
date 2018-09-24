@@ -1,0 +1,194 @@
+.card-content {
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+.card-content div.row {
+	margin-bottom: 2px;
+}
+
+.card-content div.col {
+	padding-right: 1px !important;
+	padding-left: 1px !important;
+}
+
+.bordered-div {
+	border: 5px solid #aaa;
+}
+
+.borderless {
+	border-color: #fff !important;
+	border-bottom: none !important;
+}
+
+.periograma-bigger {
+	font-size: 1.5em;
+}
+
+.span-titulo {
+	color: #9e9e9e;
+}
+
+.psr {
+	padding: 1.5em !important;
+}
+
+.legenda {
+	color: #9e9e9e;
+	font-size: small;
+}
+
+.atendimentos-label {
+	font-size: 1.2rem !important;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.ellipsis-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* TABLE */
+td.periograma-cell, th.periograma-cell {
+	height: 1.5rem !important;
+	text-align: center;
+	border: 1px solid black;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+table.double-height td, table.double-height th {
+	line-height: 3rem !important;
+}
+
+td.periograma-cell:hover, th.periograma-cell:hover {
+	background-color: #ddd;
+}
+
+td.force-wrap div, th.force-wrap div {
+	width: 100%;
+	overflow: hidden;
+}
+/* INPUTS */
+/* Aplica tamanho padrão para todos que não estão em double-height */
+table:not (.double-height ) td .periograma-input, table:not (.double-height) th .periograma-input {
+	height: 1.5rem !important;
+}
+
+.periograma-input {
+	font-size: 1em !important;
+	padding: 0px !important;
+	border: 0px !important;
+	margin: 0px !important;
+	text-align: center;
+}
+
+.periograma-input:disabled {
+	background-color: #ccc;
+}
+/* CHECKBOX */
+i.periograma-icon {
+	padding: 0px !important;
+	border: 0px !important;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	font-size: 1.3rem;
+}
+
+i.periograma-icon:hover {
+	opacity: 0.5;
+}
+
+i.sangramento-sondagem {
+	font-size: 0.8rem;
+}
+
+/* FURCA */
+img.almost-hidden {
+	opacity: 0.1;
+}
+
+img.furca:hover {
+	cursor: pointer;
+}
+
+img.furca:hover {
+	opacity: 0.3;
+}
+
+img.disabled {
+	opacity: 0.5 !important;
+	cursor: not-allowed !important;
+}
+
+img.doubled {
+	height: 9px;
+	width: 9px;
+}
+
+/* 	Outros fatores
+ */
+.periograma-ul {
+	min-height: 1.46rem !important;
+	padding: 0px !important;
+	border: 0px !important;
+	margin: 0px !important;
+	font-size: 0.6em !important;
+	text-align: center;
+}
+
+.periograma-ul li {
+	line-height: 2;
+	box-sizing: border-box;
+}
+
+.periograma-ul div {
+	padding: 2px 0px;
+}
+
+/*	Badge outros fatores  
+*/
+.periograma-badge {
+	display: inline-block;
+	font-weight: 800;
+	font-size: 7px;
+	width: 42%;
+	color: #fff;
+	background-color: #263238;
+	border-radius: 2px;
+	margin: 1px;
+}
+
+.periograma-badge-invisivel {
+	opacity: 0;
+}
+
+/* PLACA BACTERIANA E SANGRAMENTO MARGINAL */
+.four-checkboxes {
+	line-height: 1rem;
+}
+
+.four-checkboxes .ln {
+	margin: 0;
+	display: inline-flex;
+}
+
+.four-checkboxes .ln i {
+	font-size: 1.3rem;
+}
+
+.four-checkboxes .ln:nth-child(2) i:first-child {
+	margin-right: 12px;
+}
+
+.middle-cell .four-checkboxes .ln:nth-child(2) i:first-child {
+	margin-right: 4px;
+}
+
+/*Botão para Criar Novo Periograma*/
+#periograma_btn_novo {
+	float: right;
+}

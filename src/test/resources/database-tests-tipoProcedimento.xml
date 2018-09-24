@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+
+	<!-- Tipos de Procedimentos -->
+	<tipo_procedimento id="1" cod_identificador="0101020015" nome="Exodontia de dente permanente" descricao="Exodontia de dente permanente" />
+	<tipo_procedimento id="2" cod_identificador="0307020070" nome="Pulpotomia dentária" descricao="Pulpotomia dentária" />
+	<tipo_procedimento id="3" cod_identificador="0307040151" nome="Acesso a polpa dentária e medicação (por dente)" descricao="Acesso a polpa dentaria e medicação (por dente)" />
+	
+
+</dataset>

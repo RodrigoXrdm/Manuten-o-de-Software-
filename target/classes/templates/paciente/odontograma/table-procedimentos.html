@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+
+<head>
+</head>
+
+<body>
+    
+	<div th:fragment="procedimentosList" class="">
+		<table id="table-procedimentos" class="mf-table">
+			<thead>
+				<tr>
+					<th>Data</th>
+					<th>Nome</th>
+					<th>Dente</th>
+					<th>Face/Raiz</th>
+					<th>Descrição</th>
+					<th>Responsável</th>
+					<th>Tipo</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="procedimento: ${procedimentos}">
+					<td th:text="${#dates.format(procedimento.ficha.atendimento.data, 'dd/MM/yyyy')}"></td>
+					<td th:text="${procedimento.tipoProcedimento.nome}"></td>
+					<td th:switch="${procedimento.estrutura.class.name}">
+						<span th:case="'ufc.npi.prontuario.model.Dente'" th:text="${procedimento.estrutura.numero}"></span>
+						<span th:case="'ufc.npi.prontuario.model.Face'" th:text="${procedimento.estrutura.dente.numero}"></span>
+						<span th:case="'ufc.npi.prontuario.model.Raiz'" th:text="${procedimento.estrutura.dente.numero}"></span>
+						<span th:case="'ufc.npi.prontuario.model.Boca'">-</span>
+					</td>
+					<td th:switch="${procedimento.estrutura.class.name}">
+						<span th:case="'ufc.npi.prontuario.model.Dente'">-</span>
+						<span th:case="'ufc.npi.prontuario.model.Face'" th:text="${'Face: ' + procedimento.estrutura.nome}"></span>
+						<span th:case="'ufc.npi.prontuario.model.Raiz'" th:text="${'Raiz: ' + procedimento.estrutura.nome}"></span>
+						<span th:case="'ufc.npi.prontuario.model.Boca'">-</span>
+					</td>
+					<td th:text="${procedimento.descricao}"></td>
+					<td th:text="${procedimento.ficha.atendimento.responsavel.nome}"></td>
+					<td th:text="${procedimento.preExistente} ? 'Pré-existente' : 'Realizado'"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

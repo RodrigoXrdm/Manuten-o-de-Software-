@@ -1,0 +1,2845 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+	<body>
+		
+		<div th:fragment="fase1" id="fase1" class="card">
+			
+			<input th:if="${periograma != null}" type="hidden" th:value="${periograma.id}" id="id-periograma"></input>
+			
+			<div class="card-content no-padding" style="width:1050px; margin: 0 auto;">
+			<!-- BEGIN UPPERCONTENT -->
+				<!-- BEGIN PSR ROW -->
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<thead>
+								<tr>
+									<!-- &nbsp; para deixar a célula preenchida em branco -->
+									<th class="periograma-cell borderless">&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="periograma-cell"><strong>Registro do
+												PSR</strong></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th class="periograma-cell">18</th>
+										<th class="periograma-cell">17</th>
+										<th class="periograma-cell">16</th>
+										<th class="periograma-cell">15</th>
+										<th class="periograma-cell">14</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="5" class="periograma-cell">
+											<input id="psr-s1" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(0).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4 ">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th class="periograma-cell">13</th>
+										<th class="periograma-cell">12</th>
+										<th class="periograma-cell">11</th>
+										<th class="periograma-cell">21</th>
+										<th class="periograma-cell">22</th>
+										<th class="periograma-cell">23</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="6" class="periograma-cell">
+											<input id="psr-s2" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(1).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4 ">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th class="periograma-cell">24</th>
+										<th class="periograma-cell">25</th>
+										<th class="periograma-cell">26</th>
+										<th class="periograma-cell">27</th>
+										<th class="periograma-cell">28</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="5" class="periograma-cell">
+											<input id="psr-s3" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(2).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- END PSR ROW -->
+				<!-- BEGIN UPPER FACES -->
+				<div class="row">
+					<div class="col l2">
+						<p>
+							<strong>Aparelho Ortodôntico</strong>
+						</p>
+						<label class="col l12"> <input name="upper-aparelho"
+								type="radio" value="Fixo" /> <span>Fixo</span>
+							</label> <label class="col l12"> <input name="upper-aparelho"
+								type="radio" value="movel" /> <span>Móvel</span>
+							</label> <label class="col l12"> <input name="upper-aparelho"
+								type="radio" value="nenhum" /> <span>Não Possui</span>
+							</label>
+					</div>
+					<div class="col l10">
+						<div id="upper-dente">
+							<img src="/img/paciente/periograma/f1_dentes_superiores_vestibular.min.svg" style="width: 870px;"/>
+						</div>
+					</div>
+				</div>
+				<!-- END UPPER FACES -->
+				<!-- BEGIN UPPER INDIVIDUAL VALUES -->
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th colspan="5" class="periograma-cell"><strong>Cálculo Supragengival </strong></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d18" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=18, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d17" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=17, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d16" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=16, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d15" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=15, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d14" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=14, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d13" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=13, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d12" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=12, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d11" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=11, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d21" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=21, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d22" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=22, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d23" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=23, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d24" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=24, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d25" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=25, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d26" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=26, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d27" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=27, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d28" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=28, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th colspan="5" class="periograma-cell"><strong>Outros fatores</strong></th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+									<td id="outros-fatores-d18"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=18, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										
+					
+										<td id="outros-fatores-d17"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=17, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+
+										<td id="outros-fatores-d16"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=16, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td	id="outros-fatores-d15"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=15, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+
+										<td id="outros-fatores-d14"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=14, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td id="outros-fatores-d13"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=13, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+
+										<td id="outros-fatores-d12"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=12, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+
+										<td id="outros-fatores-d11"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=11, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d21"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=21, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d22"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=22, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d23"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=23, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td id="outros-fatores-d24"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=24, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d25"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=25, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d26"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=26, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d27"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=27, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d28"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=28, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th class="periograma-cell">
+										<div>&nbsp;</div>
+										<div><strong>Sangramento Marginal</strong></div>
+										<div>&nbsp;</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d18-fv" 
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=18, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d18-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=18, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+
+												<i id="sangramento-marginal-d18-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=18, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d18-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=18, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+									</td>
+									<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d17-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=17, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d17-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=17, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d17-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=17, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d17-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=17, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+									</td>
+									<td class="periograma-cell sangramento-marginal four-checkboxes">
+										<div class="ln">
+											<i id="sangramento-marginal-d16-fv"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=16, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d16-fd"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=16, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											<i id="sangramento-marginal-d16-fm"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=16, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d16-fl"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=16, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+									</td>
+									<td class="periograma-cell sangramento-marginal four-checkboxes">
+										<div class="ln">
+											<i id="sangramento-marginal-d15-fv"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=15, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d15-fd"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=15, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											<i id="sangramento-marginal-d15-fm"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=15, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d15-fl"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=15, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+									</td>
+									<td class="periograma-cell sangramento-marginal four-checkboxes">
+										<div class="ln">
+											<i id="sangramento-marginal-d14-fv"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=14, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d14-fd"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=14, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											<i id="sangramento-marginal-d14-fm"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=14, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+										<div class="ln">
+											<i id="sangramento-marginal-d14-fl"
+											class="material-icons  periograma-icon sangramento-marginal-face"
+											th:attrappend="data-dente=14, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+										</div>
+									</td>
+			
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr class="middle-cell">
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d13-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=13, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d13-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=13, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d13-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=13, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d13-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=13, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d12-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=12, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d12-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=12, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d12-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=12, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d12-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=12, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d11-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=11, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d11-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=11, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d11-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=11, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d11-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=11, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d21-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=21, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d21-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=21, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d21-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=21, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d21-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=21, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d22-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=22, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d22-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=22, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d22-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=22, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d22-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=22, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d23-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=23, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d23-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=23, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d23-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=23, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d23-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=23, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d24-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=24, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d24-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=24, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d24-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=24, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d24-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=24, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d25-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=25, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d25-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=25, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d25-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=25, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d25-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=25, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d26-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=26, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d26-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=26, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d26-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=26, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d26-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=26, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d27-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=27, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d27-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=27, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d27-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=27, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d27-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=27, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d28-fv"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=28, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d28-fd"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=28, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d28-fm"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=28, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d28-fl"
+												class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=28, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th class="periograma-cell">
+										<div>&nbsp;</div>
+										<div><strong>Placa Bacteriana</strong></div>
+										<div>&nbsp;</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table triple-height">
+								<tbody>
+									<tr>
+										
+										<td class="periograma-cell placa-bacteriana four-checkboxes">											
+											<div class="ln">
+												<i id="placa-bacteriana-d18-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=18, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d18-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=18, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d18-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=18, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d18-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=18, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d17-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=17, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d17-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=17, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d17-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=17, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d17-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=17, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d16-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=16, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d16-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=16, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d16-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=16, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d16-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=16, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d15-fv" 
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=15, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d15-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=15, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d15-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=15, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d15-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=15, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d14-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=14, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d14-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=14, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d14-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=14, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d14-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=14, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+			
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table triple-height">
+								<tbody>
+									<tr class="middle-cell">
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d13-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=13, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d13-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=13, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d13-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=13, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d13-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=13, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d12-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=12, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d12-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=12, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d12-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=12, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d12-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=12, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d11-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=11, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d11-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=11, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d11-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=11, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d11-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=11, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d21-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=21, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d21-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=21, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d21-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=21, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d21-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=21, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d22-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=22, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d22-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=22, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d22-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=22, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d22-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=22, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d23-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=23, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d23-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=23, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d23-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=23, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d23-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=23, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table triple-height">
+								<tbody>
+									<tr>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d24-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=24, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d24-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=24, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d24-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=24, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d24-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=24, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d25-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=25, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d25-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=25, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d25-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=25, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d25-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=25, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d26-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=26, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d26-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=26, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d26-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=26, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d26-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=26, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d27-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=27, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d27-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=27, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d27-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=27, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d27-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=27, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d28-fv"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=28, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d28-fd"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=28, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d28-fm"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=28, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d28-fl"
+												class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=28, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- END UPPER INDIVIDUAL VALUES -->
+				<!-- BEGIN CALCULATED VALUES -->
+				<div class="row">
+					<div class="col l10 offset-l2 bordered-div">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell borderless"><strong>
+													Sangramento Marginal = <span id="sangramento-marginal">67</span>%
+											</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell borderless"><strong>Placa
+													= <span id="placa">75</span>%
+											</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table" style="border: none !important;">
+								<tbody>
+									<tr>
+										<td class="periograma-cell borderless"><strong>Índice
+													de O'Leary = <span id="oleary">69</span>%
+											</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- END CALCULATED VALUES-->
+				<!-- BEGIN BOTTOM INDIVIDUAL VALUES -->
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th colspan="5" class="periograma-cell"><strong>Cálculo
+												Supragengival </strong></th>
+								</tr>
+			
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d48" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=48, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="scalculo-supragengival-d47" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=47, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d46" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=46, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d45" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=45, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="scalculo-supragengival-d44" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=44, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d43" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=43, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d42" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=42, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d41" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=41, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d31" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=31, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d32" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=32, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d33" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=33, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+			
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="col l4">
+								<table class="mf-table">
+									<tbody>
+										<tr>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d34" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=34, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d35" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=35, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d36" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=36, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d37" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=37, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+											<td class="periograma-cell">
+												<i id="calculo-supragengival-d38" 
+												class="material-icons periograma-icon supragengival"
+												th:attrappend="data-dente=38, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th colspan="5" class="periograma-cell"><strong>Outros
+												Fatores</strong></th>
+								</tr>
+			
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td id="outros-fatores-d48"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=48, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										
+										<td id="outros-fatores-d47"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=47, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td	id="outros-fatores-d46"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=46, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d45"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=45, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d44"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=44, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td id="outros-fatores-d43"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=43, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									
+										<td	id="outros-fatores-d42"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=42, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d41"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=41, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d31"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=31, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d32"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=32, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d33"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=33, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td	id="outros-fatores-d34"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=34, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d35"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=35, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d36"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=36, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d37"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=37, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+										<td id="outros-fatores-d38"
+										class="periograma-cell selecionar-outro-fator"
+										th:attrappend="data-dente=38, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">
+											<ul class="periograma-ul">
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+														<span class="periograma-badge periograma-badge-invisivel">MPD</span>
+													</div>
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th class="periograma-cell">
+										<div>&nbsp;</div>
+										<div><strong>Sangramento Marginal</strong></div>
+										<div>&nbsp;</div>
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d48-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=48, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d48-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=48, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d48-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=48, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d48-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=48, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d47-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=47, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d47-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=47, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d47-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=47, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d47-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=47, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d46-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=46, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d46-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=46, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d46-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=46, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d46-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=46, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d45-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=45, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d45-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=45, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d45-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=45, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d45-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=45, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d44-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=44, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d44-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=44, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d44-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=44, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d44-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=44, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr class="middle-cell">
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d43-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=43, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d43-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=43, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d43-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=43, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d43-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=43, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d42-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=42, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d42-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=42, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d42-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=42, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d42-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=42, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d41-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=41, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d41-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=41, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d41-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=41, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d41-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=41, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d31-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=31, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d31-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=31, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d31-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=31, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d31-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=31, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d32-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=32, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d32-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=32, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d32-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=32, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d32-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=32, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell sangramento-marginal four-checkboxes">
+											<div class="ln">
+												<i id="sangramento-marginal-d33-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=33, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d33-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=33, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="sangramento-marginal-d33-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=33, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="sangramento-marginal-d33-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+												th:attrappend="data-dente=33, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+	
+										</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+										<tr>
+												<td class="periograma-cell sangramento-marginal four-checkboxes">
+													<div class="ln">
+														<i id="sangramento-marginal-d34-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=34, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d34-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=34, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+														<i id="sangramento-marginal-d34-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=34, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d34-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=34, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+												</td>
+												<td class="periograma-cell sangramento-marginal four-checkboxes">
+													<div class="ln">
+														<i id="sangramento-marginal-d35-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=35, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d35-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=35, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+														<i id="sangramento-marginal-d35-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=35, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d35-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=35, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+												</td>
+												<td class="periograma-cell sangramento-marginal four-checkboxes">
+													<div class="ln">
+														<i id="sangramento-marginal-d36-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=36, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d36-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=36, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+														<i id="sangramento-marginal-d36-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=36, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d36-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=36, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+												</td>
+												<td class="periograma-cell sangramento-marginal four-checkboxes">
+													<div class="ln">
+														<i id="sangramento-marginal-d37-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=37, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d37-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=37, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+														<i id="sangramento-marginal-d37-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=37, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d37-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=37, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+												</td>
+												<td class="periograma-cell sangramento-marginal four-checkboxes">
+													<div class="ln">
+														<i id="sangramento-marginal-d38-fv" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=38, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d38-fd" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=38, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+														<i id="sangramento-marginal-d38-fm" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=38, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+													<div class="ln">
+														<i id="sangramento-marginal-d38-fl" class="material-icons  periograma-icon sangramento-marginal-face"
+														th:attrappend="data-dente=38, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+													</div>
+												</td>
+		
+											</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<tbody>
+								<tr>
+									<th class="periograma-cell">
+										<div>&nbsp;</div>
+										<div><strong>Placa Bacteriana</strong></div>
+										<div>&nbsp;</div>
+									</th>
+								</tr>
+			
+							</tbody>
+						</table>
+					</div>
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d48-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=48, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d48-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=48, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d48-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=48, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d48-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=48, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d47-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=47, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d47-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=47, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d47-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=47, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d47-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=47, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d46-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=46, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d46-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=46, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d46-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=46, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d46-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=46, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d45-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=45, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d45-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=45, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d45-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=45, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d45-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=45, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d44-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=44, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d44-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=44, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d44-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=44, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d44-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=44, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr class="middle-cell">
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d43-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=43, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d43-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=43, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d43-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=43, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d43-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=43, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d42-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=42, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d42-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=42, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d42-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=42, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d42-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=42, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d41-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=41, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d41-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=41, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d41-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=41, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d41-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=41, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d31-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=31, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d31-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=31, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d31-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=31, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d31-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=31, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d32-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=32, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d32-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=32, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d32-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=32, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d32-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=32, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d33-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=33, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d33-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=33, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d33-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=33, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d33-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=33, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4">
+							<table class="mf-table">
+								<tbody>
+									<tr>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d34-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=34, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d34-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=34, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d34-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=34, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d34-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=34, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d35-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=35, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d35-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=35, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d35-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=35, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d35-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=35, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d36-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=36, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d36-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=36, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d36-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=36, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d36-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=36, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d37-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=37, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d37-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=37, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d37-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=37, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d37-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=37, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+										<td class="periograma-cell placa-bacteriana four-checkboxes">
+											<div class="ln">
+												<i id="placa-bacteriana-d38-fv" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=38, data-face=V, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d38-fd" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=38, data-face=D, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+												<i id="placa-bacteriana-d38-fm" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=38, data-face=M, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+											<div class="ln">
+												<i id="placa-bacteriana-d38-fl" class="material-icons  periograma-icon placa-bacteriana-face"
+												th:attrappend="data-dente=38, data-face=L, data-periograma=${periograma != null}?${periograma.id}, data-paciente=${periograma != null}?${paciente.id}">check_box_outline_blank</i>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- END BOTTOM INDIVIDUAL VALUES -->
+				<!-- BEGIN BOTTOM FACES -->
+				<div class="row">
+					<div class="col l2">
+						<p>
+							<strong>Aparelho Ortodôntico</strong>
+						</p>
+						<label class="col l12"> <input name="bottom-aparelho"
+								type="radio" value="Fixo" /> <span>Fixo</span>
+							</label> <label class="col l12"> <input name="bottom-aparelho"
+								type="radio" value="movel" /> <span>Móvel</span>
+							</label> <label class="col l12"> <input name="bottom-aparelho"
+								type="radio" value="nenhum" /> <span>Não Possui</span>
+							</label>
+					</div>
+					<div class="col l10">
+						<div id="bottorn-dente">
+							<img src="/img/paciente/periograma/f1_dentes_inferiores_vestibular.min.svg" style="width: 870px;"/>
+						</div>
+					</div>
+				</div>
+				<!-- END BOTTOM FACES -->
+				<!-- BEGIN PSR ROW -->
+				<div class="row">
+					<div class="col l2">
+						<table class="mf-table">
+							<thead>
+								<tr>
+									<th colspan="5" class="periograma-cell"><strong>Registro
+												do PSR </strong></th>
+								</tr>
+							</thead>
+						</table>
+			
+					</div>
+			
+					<div class="col l10">
+						<div class="col l4">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th colspan="5" class="periograma-cell">
+											<input id="psr-s4" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(3).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</th>
+									</tr>
+								</thead>
+			
+								<tbody>
+									<tr>
+										<th class="periograma-cell">48</th>
+										<th class="periograma-cell">47</th>
+										<th class="periograma-cell">46</th>
+										<th class="periograma-cell">45</th>
+										<th class="periograma-cell">44</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4 ">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th colspan="6" class="periograma-cell">
+											<input id="psr-s5" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(4).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</th>
+									</tr>
+								</thead>
+			
+								<tbody>
+									<tr>
+										<th class="periograma-cell">43</th>
+										<th class="periograma-cell">42</th>
+										<th class="periograma-cell">41</th>
+										<th class="periograma-cell">31</th>
+										<th class="periograma-cell">32</th>
+										<th class="periograma-cell">33</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col l4 ">
+							<table class="mf-table">
+								<thead>
+									<tr>
+										<th colspan="5" class="periograma-cell">
+											<input id="psr-s6" 
+												type="text"
+												th:attrappend="data-sextante=${periograma != null}?${sextantes.get(5).id}, data-periograma=${periograma != null}?${periograma.id}"
+												class="tooltipped periograma-input selecionar-psr" />
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="periograma-cell">34</th>
+										<th class="periograma-cell">35</th>
+										<th class="periograma-cell">36</th>
+										<th class="periograma-cell">37</th>
+										<th class="periograma-cell">38</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PSR ROW -->
+			
+		</div>
+		<!-- Modal PSR -->
+			<div th:fragment="modal-psr" id="modal-psr" class="modal" role="dialog">
+				<div class="modal-content">
+					<h4>Exame Simplificado do Periograma</h4>
+					<div class="card-content no-padding">
+						<div class="row">
+							<form id="formRadio" action="">
+		
+								<div class="switch offset-l7 col l5">
+		
+									<span class="span-titulo"> Sextante ausente</span>
+		
+									<label class="psr"> Off <input name="psrCheck"
+										 type="checkbox"  value="X" id="sextanteAusente" /> <span class="lever"></span> On 
+									</label>
+		
+								</div>
+								<label class="psr col l2"> <input name="psrRadio"
+									type="radio" value="0" /> <span>0</span>
+								</label> <label class="psr col l2"> <input name="psrRadio"
+									type="radio" value="1" /> <span>1</span>
+								</label> <label class="psr col l2"> <input name="psrRadio"
+									type="radio" value="2" /> <span>2</span>
+								</label> <label class="psr col l2"> <input name="psrRadio"
+									type="radio" value="3" /> <span>3</span>
+								</label> <label class="psr col l2"> <input name="psrRadio"
+									type="radio" value="4" /> <span>4</span>
+								</label>
+		
+								<label class="psr col l2"> <input
+									name="psrCheck" type="checkbox" value="*"
+									id="selecionarAsterisco" /> <span>*</span>
+								</label>
+		
+		
+								<div class="legenda">
+									<span class="col l12">
+									0 - Ausência de sangramento e fatores retentivos e faixa escura da sonda totalmente visível;
+									</span>
+									<span class=" col l12">
+									1 - Presença de sangramento à sondagem, /ausência de fatores retentivos/faixa escura da sonda totalmente visível;
+									</span>
+									<span class=" col l12">
+									2 - Presença de fatores retentivos de placa (cálculo, restaurações com falhas marginais, cáries)/faixa escura totalmente visível;
+									</span>
+									<span class=" col l12">
+									3 - Faixa escura da sonda parcialmente visível - 4 a 5 milímetros de profundidade de sondagem;
+									</span>
+									<span class=" col l12">
+									4 - Faixa escura da sonda não mais visível - 6 milímetros ou mais de profundidade de sondagem;
+									</span>
+									<span class=" col l12">
+									(*) - Indica presença de recessão gengival maior que 3 milímetros / mobilidade dental / envolvimento de furca/ problemas mucogengivais.
+									</span>
+		
+								</div>
+		
+		
+							</form>
+						</div>
+					</div>
+		
+					<div class="modal-footer card-action right-align">
+						<span class="legenda col l12">Obs: Selecione o * juntamente com o
+										código atribuido em cada sextante</span>
+						<a class="btn margin-right waves-effect" id="adicionarPSR">Adicionar</a>
+						<a class="btn btn-flat margin-right waves-effect" id="cancelarPSR">Cancelar</a>
+					</div>
+		
+				</div>
+		
+			</div>
+			
+				<!-- Modal Outros Fatores -->
+		<div th:fragment="modal-outros-fatores" id="modal-outros-fatores" class="modal" role="dialog">
+			<div class="modal-content">
+				<h4>Exame Simplificado do Periograma</h4>
+				<div class="card-content">
+	 				<div class="row">
+						<form id="formRadio" action="">
+	
+							<div class="modal-content">
+								<div class="row">
+									<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="cc" />
+							        	<span>CC</span>
+							    	</label>
+							    	<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="pma"/>
+							        	<span>PMA</span>
+							    	</label>
+							    	<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="ri"/>
+							        	<span>RI</span>
+							    	</label>
+							    	<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="rr"/>
+							        	<span>RR</span>
+							    	</label>
+							    	<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="mpd"/>
+							        	<span>MPD</span>
+							    	</label>
+							    	<label class="col l2 outros-fatores-checkbox">
+							        	<input type="checkbox" id="todos"/>
+							        	<span>Todos</span>
+							    	</label>
+								</div>
+						   </div>
+							
+							<div class="legenda">
+								<span class="col l12">
+								CC - Cavidades de cáries
+								</span>
+								<span class=" col l12">
+								PMA - Próteses mal adaptadas
+								</span>
+								<span class=" col l12">
+								RI - Restaurações Incorretas
+								</span>
+								<span class=" col l12">
+								RR - Raízes Residuais
+								</span>
+								<span class=" col l12">
+								MPD - Má posição dental
+								</span>
+								<!-- <span class=" col l12">
+								(*) - Indica presença de recessão gengival maior que 3 milímetros / mobilidade dental / envolvimento de furca/ problemas mucogengivais.
+								</span> -->
+		 						
+							</div>
+							
+						</form>
+					</div>
+				</div>
+	
+				<div class="modal-footer card-action right-align">
+					<a class="btn margin-right waves-effect" id="adicionarOutroFator">Adicionar</a>
+					<a class="btn btn-flat margin-right waves-effect" id="cancelarOutroFator">Cancelar</a>
+				</div>
+			</div>
+	
+		</div>
+	</body>
+
+</html>

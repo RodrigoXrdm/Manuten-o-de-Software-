@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="paciente/detalhes-base"
+	th:with="currentPage='pacientes',currentSubPage='tratamentos'">
+
+<section layout:fragment="tab-content">
+	
+	<div th:fragment="cadastrarTratamento">
+		
+		<form class="card" th:action="@{/paciente/__${paciente.id}__/tratamento/__${acao}__}"
+			method="post" th:object="${tratamento}">
+			
+			<input type="hidden" th:field="*{id}" />
+			<input type="hidden" name="paciente" th:value="${paciente.id}" />
+			<input type="hidden" name="responsavel" id="responsavel" th:value="${#authentication.principal.id}" />
+
+			<div class="card-content">
+
+				<div class="row">
+
+					<div class="col l3 m3 s12">
+						<div class="input-field">
+							<select th:field="*{clinica}" id="clinica"  th:disabled="${acao} EQ 'editar'" class="form-control" required="required">
+								<option th:each="clinica : ${clinicas}" th:value="${clinica.id}"
+									th:text="${clinica.nome}"></option>
+							</select> <label for="clinica">Clínica</label>
+						</div>
+					</div>
+					
+					<div class="col l3 m3 s12">
+						<div class="input-field">
+							<select name="status" th:disabled="${acao} EQ 'cadastrar'"
+								id="status" class="form-control"
+								th:field="*{status}">
+								<option th:each="status : ${statuses}" th:value="${status}"
+									th:text="${status.descricao}">
+								</option>
+							</select> <label for="status">Status</label>
+						</div>
+					</div>
+
+					<div class="col l3 m3 s12">
+						<div class="input-field">
+							<select id="prioridade"
+								class="form-control" th:field="*{prioridade}">
+								<option th:value="1" th:text="${1}" />
+								<option th:value="2" th:text="${2}" />
+								<option th:value="3" th:text="${3}" />
+								<option th:value="4" th:text="${4}" />
+								<option th:value="5" th:text="${5}" />
+							</select> <label for="prioridade">Prioridade</label>
+						</div>
+					</div>
+
+					<div class="col l3 m3 s12">
+						<div class="input-field">
+							<input type="text" id="data" class="datepicker" data-value="today" th:field="*{data}" />
+							<label for="data">Data</label>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="card-action right-align">
+
+				<a th:href="@{'/paciente/' + ${paciente.id} + '/tratamento/listar'}"
+					class="btn btn-flat waves-effect">Cancelar</a>
+				<button type="submit" class="btn waves-effect waves-light">Salvar</button>
+
+			</div>
+
+		</form>
+
+	</div>
+</section>
+
+<section layout:fragment="js-paciente">
+	<script type="text/javascript" th:src="@{/js/tratamento/cadastrar-tratamento.js}"></script>
+</section>
+
+</html>
