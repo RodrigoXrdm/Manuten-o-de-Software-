@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.64" tests="8" errors="0" skipped="0" failures="0">
+<testsuite name="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.746" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
@@ -61,12 +61,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="recuperarSenhaUsuarioSemSolicitacaoAtiva" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.036"/>
-  <testcase name="novaSenha" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.205"/>
-  <testcase name="alterarSenha" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.265"/>
-  <testcase name="testAtualizarUsuario" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.052"/>
-  <testcase name="testBuscarPorId" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.017"/>
-  <testcase name="buscarPorEmail" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.016"/>
-  <testcase name="recuperarSenhaUsuarioComSolicitacaoAtiva" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.024"/>
-  <testcase name="recuperarSenhaUsuarioInvalido" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.025"/>
+  <testcase name="recuperarSenhaUsuarioSemSolicitacaoAtiva" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.033"/>
+  <testcase name="novaSenha" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.226"/>
+  <testcase name="alterarSenha" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.325"/>
+  <testcase name="testAtualizarUsuario" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.067"/>
+  <testcase name="testBuscarPorId" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.019"/>
+  <testcase name="buscarPorEmail" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.023"/>
+  <testcase name="recuperarSenhaUsuarioComSolicitacaoAtiva" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.026"/>
+  <testcase name="recuperarSenhaUsuarioInvalido" classname="ufc.npi.prontuario.service.UsuarioServiceTest" time="0.027"/>
 </testsuite>

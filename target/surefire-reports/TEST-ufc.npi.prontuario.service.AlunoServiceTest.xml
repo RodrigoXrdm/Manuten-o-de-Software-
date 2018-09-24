@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ufc.npi.prontuario.service.AlunoServiceTest" time="1.286" tests="16" errors="0" skipped="0" failures="0">
+<testsuite name="ufc.npi.prontuario.service.AlunoServiceTest" time="0.923" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
@@ -61,20 +61,20 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testSalvarAluno" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.367"/>
-  <testcase name="testAtualizarAlunoComMatriculaJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.16"/>
-  <testcase name="testSalvarAlunoComMatriculaJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.043"/>
-  <testcase name="testAtualizarAlunoComEmailJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.111"/>
-  <testcase name="testRemoverAlunoMatriculadoEmTurma" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.02"/>
-  <testcase name="testRemoverQuePossuiAtendimentos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.022"/>
-  <testcase name="testBuscarTudo" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.026"/>
+  <testcase name="testSalvarAluno" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.265"/>
+  <testcase name="testAtualizarAlunoComMatriculaJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.082"/>
+  <testcase name="testSalvarAlunoComMatriculaJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.027"/>
+  <testcase name="testAtualizarAlunoComEmailJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.083"/>
+  <testcase name="testRemoverAlunoMatriculadoEmTurma" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.016"/>
+  <testcase name="testRemoverQuePossuiAtendimentos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.018"/>
+  <testcase name="testBuscarTudo" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.017"/>
   <testcase name="testSalvarAlunoComEmailJaExistente" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.023"/>
-  <testcase name="testBuscarPorEmail" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.025"/>
-  <testcase name="testSalvarAlunoSemCamposObrigatoriosPreenchidos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.024"/>
-  <testcase name="testBuscarPorMatricula" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.031"/>
-  <testcase name="testBuscarPorId" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.024"/>
-  <testcase name="testAtualizarAlunoSemCamposObrigatoriosPreenchidos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.117"/>
-  <testcase name="testRemoverAlunoPorId" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.112"/>
-  <testcase name="testBuscarAjudantes" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.031"/>
-  <testcase name="testAtualizarAluno" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.15"/>
+  <testcase name="testBuscarPorEmail" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.023"/>
+  <testcase name="testSalvarAlunoSemCamposObrigatoriosPreenchidos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.021"/>
+  <testcase name="testBuscarPorMatricula" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.021"/>
+  <testcase name="testBuscarPorId" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.021"/>
+  <testcase name="testAtualizarAlunoSemCamposObrigatoriosPreenchidos" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.103"/>
+  <testcase name="testRemoverAlunoPorId" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.078"/>
+  <testcase name="testBuscarAjudantes" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.024"/>
+  <testcase name="testAtualizarAluno" classname="ufc.npi.prontuario.service.AlunoServiceTest" time="0.101"/>
 </testsuite>
