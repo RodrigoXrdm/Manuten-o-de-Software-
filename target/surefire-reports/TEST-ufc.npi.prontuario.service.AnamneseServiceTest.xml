@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.921" tests="17" errors="0" skipped="0" failures="0">
+<testsuite name="ufc.npi.prontuario.service.AnamneseServiceTest" time="1.093" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
@@ -61,21 +61,21 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testBuscarTodasAnamnesesFinalizadas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.023"/>
-  <testcase name="testSalvarAnamneseComPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.089"/>
-  <testcase name="testBuscarAnamnesePorId" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.022"/>
-  <testcase name="testExcluirPerguntaDeAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.018"/>
-  <testcase name="testRemoverAnamneseSemPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.061"/>
-  <testcase name="testSalvarAnamneseSemCamposObrigatorios" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.058"/>
-  <testcase name="testAlterarOrdemADePerguntasAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.086"/>
-  <testcase name="testBuscarTudo" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.015"/>
-  <testcase name="testSalvarAnamneseComNomeRepetido" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.065"/>
-  <testcase name="testRemoverAnamneseComPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.058"/>
-  <testcase name="testSalvarPerguntaEmAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.053"/>
-  <testcase name="testSalvarAnamneseSemPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.061"/>
+  <testcase name="testBuscarTodasAnamnesesFinalizadas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.027"/>
+  <testcase name="testSalvarAnamneseComPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.077"/>
+  <testcase name="testBuscarAnamnesePorId" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.026"/>
+  <testcase name="testExcluirPerguntaDeAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.025"/>
+  <testcase name="testRemoverAnamneseSemPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.074"/>
+  <testcase name="testSalvarAnamneseSemCamposObrigatorios" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.065"/>
+  <testcase name="testAlterarOrdemADePerguntasAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.124"/>
+  <testcase name="testBuscarTudo" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.027"/>
+  <testcase name="testSalvarAnamneseComNomeRepetido" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.064"/>
+  <testcase name="testRemoverAnamneseComPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.068"/>
+  <testcase name="testSalvarPerguntaEmAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.066"/>
+  <testcase name="testSalvarAnamneseSemPerguntas" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.065"/>
   <testcase name="testBuscarAnamneseInexistentePorId" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.017"/>
-  <testcase name="testSalvarPerguntaEmAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.075"/>
-  <testcase name="testFinalizarAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.061"/>
-  <testcase name="testRemoverAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.057"/>
-  <testcase name="testExcluirPerguntaDeAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.102"/>
+  <testcase name="testSalvarPerguntaEmAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.085"/>
+  <testcase name="testFinalizarAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.094"/>
+  <testcase name="testRemoverAnamneseFinalizada" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.093"/>
+  <testcase name="testExcluirPerguntaDeAnamnese" classname="ufc.npi.prontuario.service.AnamneseServiceTest" time="0.096"/>
 </testsuite>

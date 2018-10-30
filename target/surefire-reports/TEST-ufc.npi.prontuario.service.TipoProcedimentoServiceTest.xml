@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.23" tests="10" errors="0" skipped="0" failures="0">
+<testsuite name="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.212" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
@@ -61,14 +61,14 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAtualizarTipoProcedimentoSemCamposObrigatorios" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.019"/>
-  <testcase name="testSalvarTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.02"/>
-  <testcase name="testRemoverTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.02"/>
-  <testcase name="testBuscarById" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.016"/>
-  <testcase name="testAtualizarTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.027"/>
-  <testcase name="testAtualizarTipoProcedimentoComMesmoNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.025"/>
-  <testcase name="testBuscarTipoProcedimentoQueContemTermoEmSeuNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.028"/>
-  <testcase name="testSalvarTipoProcedimentoComMesmoNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.026"/>
-  <testcase name="testSalvarTipoProcedimentoSemCamposObrigatorios" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.023"/>
-  <testcase name="testbuscarTudo" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.026"/>
+  <testcase name="testAtualizarTipoProcedimentoSemCamposObrigatorios" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.056"/>
+  <testcase name="testSalvarTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.023"/>
+  <testcase name="testRemoverTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.019"/>
+  <testcase name="testBuscarById" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.021"/>
+  <testcase name="testAtualizarTipoProcedimento" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.02"/>
+  <testcase name="testAtualizarTipoProcedimentoComMesmoNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.018"/>
+  <testcase name="testBuscarTipoProcedimentoQueContemTermoEmSeuNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.014"/>
+  <testcase name="testSalvarTipoProcedimentoComMesmoNome" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.014"/>
+  <testcase name="testSalvarTipoProcedimentoSemCamposObrigatorios" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.012"/>
+  <testcase name="testbuscarTudo" classname="ufc.npi.prontuario.service.TipoProcedimentoServiceTest" time="0.015"/>
 </testsuite>

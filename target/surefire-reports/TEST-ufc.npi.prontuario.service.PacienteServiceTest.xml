@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ufc.npi.prontuario.service.PacienteServiceTest" time="0.575" tests="15" errors="0" skipped="0" failures="0">
+<testsuite name="ufc.npi.prontuario.service.PacienteServiceTest" time="0.572" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
@@ -62,18 +62,18 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase name="testSalvarPacienteComMesmoNomeEoMesmoNomeDaMaeEaDataDeNascimento" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.029"/>
-  <testcase name="testSalvarPacienteSUS" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.103"/>
-  <testcase name="testSalvarPacienteLivreDemanda" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.083"/>
-  <testcase name="testBuscarPorCnsInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.021"/>
-  <testcase name="testBuscarPorCns" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.023"/>
-  <testcase name="testBuscarPorCpf" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.022"/>
+  <testcase name="testSalvarPacienteSUS" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.096"/>
+  <testcase name="testSalvarPacienteLivreDemanda" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.092"/>
+  <testcase name="testBuscarPorCnsInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.025"/>
+  <testcase name="testBuscarPorCns" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.026"/>
+  <testcase name="testBuscarPorCpf" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.026"/>
   <testcase name="testSalvarPacienteComCnsJaExistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.023"/>
-  <testcase name="testAdicionarAnamnese" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.093"/>
-  <testcase name="testSalvarPacienteSemCamposObrigatorios" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.019"/>
-  <testcase name="testBuscarTodosPacientes" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.03"/>
-  <testcase name="testBuscarPorCpfInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.02"/>
-  <testcase name="testBuscarPacientePorId" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.023"/>
-  <testcase name="testSalvarPacienteComCpfJaExistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.026"/>
-  <testcase name="testBuscarPorIdInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.02"/>
-  <testcase name="testBuscarAnamnesesDePaciente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.04"/>
+  <testcase name="testAdicionarAnamnese" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.101"/>
+  <testcase name="testSalvarPacienteSemCamposObrigatorios" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.021"/>
+  <testcase name="testBuscarTodosPacientes" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.025"/>
+  <testcase name="testBuscarPorCpfInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.017"/>
+  <testcase name="testBuscarPacientePorId" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.03"/>
+  <testcase name="testSalvarPacienteComCpfJaExistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.018"/>
+  <testcase name="testBuscarPorIdInexistente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.018"/>
+  <testcase name="testBuscarAnamnesesDePaciente" classname="ufc.npi.prontuario.service.PacienteServiceTest" time="0.025"/>
 </testsuite>

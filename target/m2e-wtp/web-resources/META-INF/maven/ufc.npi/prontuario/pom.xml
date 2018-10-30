@@ -202,8 +202,7 @@
     			<version>2.2</version>
     			<configuration>
         			<url>http://localhost:8080/manager/text</url>
-        			<server>TomcatServer</server>
-        			<path>/myapp</path>
+        			<path>/prontuario</path>
         			<username>admin</username>
         			<password>admin</password>
     			</configuration>
