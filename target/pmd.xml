@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.8.0" timestamp="2018-11-26T07:48:13.308">
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/AlunoController.java">
+<violation beginline="1" endline="104" begincolumn="1" endcolumn="1" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AlunoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/AnamneseController.java">
+<violation beginline="1" endline="154" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AnamneseController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/AtendimentoController.java">
+<violation beginline="1" endline="275" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AtendimentoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+<violation beginline="229" endline="229" begincolumn="62" endcolumn="122" rule="UselessParentheses" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AtendimentoController" method="finalizarAtendimento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/AvaliacaoController.java">
+<violation beginline="1" endline="130" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AvaliacaoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/DisciplinaController.java">
+<violation beginline="1" endline="103" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="DisciplinaController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/DocumentoController.java">
+<violation beginline="1" endline="117" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="DocumentoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/OdontogramaController.java">
+<violation beginline="1" endline="396" begincolumn="1" endcolumn="1" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="OdontogramaController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/PacienteController.java">
+<violation beginline="23" endline="23" begincolumn="1" endcolumn="43" rule="UnusedImports" ruleset="Best Practices" package="ufc.npi.prontuario.controller" class="PacienteController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'ufc.npi.prontuario.model.Registro'
+</violation>
+<violation beginline="24" endline="24" begincolumn="1" endcolumn="40" rule="UnusedImports" ruleset="Best Practices" package="ufc.npi.prontuario.controller" class="PacienteController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'ufc.npi.prontuario.model.enums'
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/PeriogramaController.java">
+<violation beginline="1" endline="134" begincolumn="1" endcolumn="1" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="PeriogramaController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/PlanoTratamentoController.java">
+<violation beginline="1" endline="138" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="PlanoTratamentoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/ProfessorController.java">
+<violation beginline="1" endline="134" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="ProfessorController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/TipoPatologiaController.java">
+<violation beginline="1" endline="97" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="TipoPatologiaController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/TipoProcedimentoController.java">
+<violation beginline="1" endline="96" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="TipoProcedimentoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/TurmaController.java">
+<violation beginline="1" endline="214" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="TurmaController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/UsuarioController.java">
+<violation beginline="1" endline="110" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="UsuarioController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/Anamnese.java">
+<violation beginline="42" endline="44" begincolumn="25" endcolumn="17" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model" class="Anamnese$Status" method="Status" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Status(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/Atendimento.java">
+<violation beginline="163" endline="163" begincolumn="37" endcolumn="89" rule="UselessParentheses" ruleset="Code Style" package="ufc.npi.prontuario.model" class="Atendimento" method="isVisivel" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/Documento.java">
+<violation beginline="103" endline="105" begincolumn="25" endcolumn="17" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model" class="Documento$TipoDocumento" method="TipoDocumento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'TipoDocumento(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/Registro.java">
+<violation beginline="76" endline="78" begincolumn="25" endcolumn="17" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model" class="Registro$Acao" method="Acao" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Acao(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/Aparelho.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="Aparelho" method="Aparelho" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Aparelho(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/Estado.java">
+<violation beginline="34" endline="36" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="Estado" method="Estado" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Estado(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/EstadoCivil.java">
+<violation beginline="13" endline="15" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="EstadoCivil" method="EstadoCivil" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'EstadoCivil(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/NomeFace.java">
+<violation beginline="9" endline="11" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="NomeFace" method="NomeFace" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'NomeFace(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/NomeRaiz.java">
+<violation beginline="9" endline="11" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="NomeRaiz" method="NomeRaiz" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'NomeRaiz(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/NomeSextante.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="NomeSextante" method="NomeSextante" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'NomeSextante(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/NumeroDente.java">
+<violation beginline="16" endline="18" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="NumeroDente" method="NumeroDente" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'NumeroDente(Integer)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/Papel.java">
+<violation beginline="11" endline="13" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="Papel" method="Papel" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Papel(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/Raca.java">
+<violation beginline="13" endline="15" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="Raca" method="Raca" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Raca(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/Sexo.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="Sexo" method="Sexo" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'Sexo(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/StatusAtendimento.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="StatusAtendimento" method="StatusAtendimento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'StatusAtendimento(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/StatusAvaliacao.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="StatusAvaliacao" method="StatusAvaliacao" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'StatusAvaliacao(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/StatusPeriograma.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="StatusPeriograma" method="StatusPeriograma" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'StatusPeriograma(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/StatusPlanoTratamento.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="StatusPlanoTratamento" method="StatusPlanoTratamento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'StatusPlanoTratamento(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/TipoArcada.java">
+<violation beginline="8" endline="10" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="TipoArcada" method="TipoArcada" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'TipoArcada(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/model/enums/TipoDente.java">
+<violation beginline="9" endline="11" begincolumn="17" endcolumn="9" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.model.enums" class="TipoDente" method="TipoDente" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'private' on constructor 'TipoDente(String)': enum constructors are implicitly private
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/AlunoRepository.java">
+<violation beginline="12" endline="12" begincolumn="16" endcolumn="75" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="AlunoRepository" method="findByMatricula" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByMatricula': the method is declared in an interface type
+</violation>
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="63" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="AlunoRepository" method="findByEmail" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByEmail': the method is declared in an interface type
+</violation>
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="103" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="AlunoRepository" method="findAllByAlunoTurmasTurmaIdEqualsAndAlunoTurmasAtivoIsTrue" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findAllByAlunoTurmasTurmaIdEqualsAndAlunoTurmasAtivoIsTrue': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/BocaRepository.java">
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="73" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="BocaRepository" method="findByPaciente" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByPaciente': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/DenteRepository.java">
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="98" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="DenteRepository" method="getQtdDentesPresenteFromPaciente" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getQtdDentesPresenteFromPaciente': the method is declared in an interface type
+</violation>
+<violation beginline="18" endline="18" begincolumn="16" endcolumn="89" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="DenteRepository" method="findByNumeroAndPaciente" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByNumeroAndPaciente': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/PacienteRepository.java">
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="60" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="PacienteRepository" method="findByCpf" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByCpf': the method is declared in an interface type
+</violation>
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="60" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="PacienteRepository" method="findByCns" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByCns': the method is declared in an interface type
+</violation>
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="164" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="PacienteRepository" method="findByNomeAndNomeDaMaeAndNascimento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByNomeAndNomeDaMaeAndNascimento': the method is declared in an interface type
+</violation>
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="89" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="PacienteRepository" method="findByNomeContainingIgnoreCase" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByNomeContainingIgnoreCase': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/UsuarioRepository.java">
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="49" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByEmail" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByEmail': the method is declared in an interface type
+</violation>
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="78" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByEmailOrMatricula" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByEmailOrMatricula': the method is declared in an interface type
+</violation>
+<violation beginline="18" endline="18" begincolumn="16" endcolumn="97" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByIdNotInAndPapeisOrderByNome" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByIdNotInAndPapeisOrderByNome': the method is declared in an interface type
+</violation>
+<violation beginline="20" endline="20" begincolumn="16" endcolumn="66" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByPapeisOrderByNome" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByPapeisOrderByNome': the method is declared in an interface type
+</violation>
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="57" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByMatricula" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findByMatricula': the method is declared in an interface type
+</violation>
+<violation beginline="24" endline="24" begincolumn="16" endcolumn="58" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findAllByEmail" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findAllByEmail': the method is declared in an interface type
+</violation>
+<violation beginline="26" endline="26" begincolumn="16" endcolumn="66" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findAllByMatricula" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'findAllByMatricula': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/AnamneseService.java">
+<violation beginline="11" endline="11" begincolumn="16" endcolumn="73" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="salvar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvar': the method is declared in an interface type
+</violation>
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="74" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="salvarPergunta" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarPergunta': the method is declared in an interface type
+</violation>
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="74" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="excluirPergunta" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'excluirPergunta': the method is declared in an interface type
+</violation>
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="43" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="buscarTudo" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarTudo': the method is declared in an interface type
+</violation>
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="55" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="buscarTodasFinalizadas" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarTodasFinalizadas': the method is declared in an interface type
+</violation>
+<violation beginline="23" endline="23" begincolumn="16" endcolumn="48" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="buscarPorId" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarPorId': the method is declared in an interface type
+</violation>
+<violation beginline="25" endline="25" begincolumn="16" endcolumn="74" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="remover" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'remover': the method is declared in an interface type
+</violation>
+<violation beginline="27" endline="27" begincolumn="16" endcolumn="49" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="finalizar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'finalizar': the method is declared in an interface type
+</violation>
+<violation beginline="29" endline="29" begincolumn="16" endcolumn="101" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AnamneseService" method="alterarOrdemAnamnese" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'alterarOrdemAnamnese': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/AvaliacaoService.java">
+<violation beginline="12" endline="12" begincolumn="16" endcolumn="48" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="salvar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvar': the method is declared in an interface type
+</violation>
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="101" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="addItem" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'addItem': the method is declared in an interface type
+</violation>
+<violation beginline="16" endline="16" begincolumn="16" endcolumn="52" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="getTodasAvaliacoes" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getTodasAvaliacoes': the method is declared in an interface type
+</violation>
+<violation beginline="18" endline="18" begincolumn="16" endcolumn="84" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="deleteAvaliacao" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'deleteAvaliacao': the method is declared in an interface type
+</violation>
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="51" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="deleteItem" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'deleteItem': the method is declared in an interface type
+</violation>
+<violation beginline="24" endline="24" begincolumn="16" endcolumn="51" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="finalizar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'finalizar': the method is declared in an interface type
+</violation>
+<violation beginline="26" endline="26" begincolumn="16" endcolumn="84" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="AvaliacaoService" method="ativarDesativar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'ativarDesativar': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/EstruturaService.java">
+<violation beginline="9" endline="9" begincolumn="16" endcolumn="58" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="EstruturaService" method="buscarPorId" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarPorId': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/OdontogramaService.java">
+<violation beginline="8" endline="8" begincolumn="16" endcolumn="51" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="OdontogramaService" method="buscarPorId" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarPorId': the method is declared in an interface type
+</violation>
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="73" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="OdontogramaService" method="buscarPorAtendimento" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarPorAtendimento': the method is declared in an interface type
+</violation>
+<violation beginline="12" endline="12" begincolumn="16" endcolumn="52" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="OdontogramaService" method="salvar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvar': the method is declared in an interface type
+</violation>
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="62" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="OdontogramaService" method="adicionar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'adicionar': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/PeriogramaFase1Service.java">
+<violation beginline="15" endline="15" begincolumn="16" endcolumn="116" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="atualizarStatusPeriograma" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'atualizarStatusPeriograma': the method is declared in an interface type
+</violation>
+<violation beginline="17" endline="17" begincolumn="16" endcolumn="123" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="salvarPsr" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarPsr': the method is declared in an interface type
+</violation>
+<violation beginline="19" endline="19" begincolumn="16" endcolumn="146" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="salvarCalculoSupragengival" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarCalculoSupragengival': the method is declared in an interface type
+</violation>
+<violation beginline="21" endline="21" begincolumn="16" endcolumn="115" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="removerCalculoSupragengival" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'removerCalculoSupragengival': the method is declared in an interface type
+</violation>
+<violation beginline="23" endline="23" begincolumn="16" endcolumn="157" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="salvarOutrosFatores" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarOutrosFatores': the method is declared in an interface type
+</violation>
+<violation beginline="25" endline="25" begincolumn="16" endcolumn="164" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="salvarSangramentoMarginal" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarSangramentoMarginal': the method is declared in an interface type
+</violation>
+<violation beginline="27" endline="27" begincolumn="16" endcolumn="133" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="removerSangramentoMarginal" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'removerSangramentoMarginal': the method is declared in an interface type
+</violation>
+<violation beginline="29" endline="29" begincolumn="16" endcolumn="160" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="salvarPlacaBacteriana" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvarPlacaBacteriana': the method is declared in an interface type
+</violation>
+<violation beginline="31" endline="31" begincolumn="16" endcolumn="129" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="removerPlacaBacteriana" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'removerPlacaBacteriana': the method is declared in an interface type
+</violation>
+<violation beginline="33" endline="33" begincolumn="16" endcolumn="84" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="calcularIndices" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'calcularIndices': the method is declared in an interface type
+</violation>
+<violation beginline="35" endline="35" begincolumn="16" endcolumn="71" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="PeriogramaFase1Service" method="carregarPeriograma" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'carregarPeriograma': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/RegistroService.java">
+<violation beginline="10" endline="10" begincolumn="16" endcolumn="115" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="RegistroService" method="salvar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'salvar': the method is declared in an interface type
+</violation>
+<violation beginline="14" endline="14" begincolumn="16" endcolumn="64" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="RegistroService" method="formatarObservacaoHtml" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'formatarObservacaoHtml': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/TipoPatologiaService.java">
+<violation beginline="22" endline="22" begincolumn="16" endcolumn="71" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.service" class="TipoPatologiaService" method="buscarUmTipoPatologiaPorNome" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'buscarUmTipoPatologiaPorNome': the method is declared in an interface type
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/EmailServiceImpl.java">
+<violation beginline="1" endline="176" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.service.impl" class="EmailServiceImpl" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/PatologiaServiceImpl.java">
+<violation beginline="95" endline="98" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Design" package="ufc.npi.prontuario.service.impl" class="PatologiaServiceImpl" method="atualizar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#collapsibleifstatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/PeriogramaServiceImpl.java">
+<violation beginline="23" endline="23" begincolumn="53" endcolumn="53" rule="EmptyStatementNotInLoop" ruleset="Error Prone" package="ufc.npi.prontuario.service.impl" class="PeriogramaServiceImpl" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_errorprone.html#emptystatementnotinloop" priority="3">
+An empty statement (semicolon) not part of a loop
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/PlanoTratamentoServiceImpl.java">
+<violation beginline="92" endline="93" begincolumn="37" endcolumn="93" rule="UselessParentheses" ruleset="Code Style" package="ufc.npi.prontuario.service.impl" class="PlanoTratamentoServiceImpl" method="editar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/ProcedimentoServiceImpl.java">
+<violation beginline="186" endline="189" begincolumn="25" endcolumn="25" rule="CollapsibleIfStatements" ruleset="Design" package="ufc.npi.prontuario.service.impl" class="ProcedimentoServiceImpl" method="atualizar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_design.html#collapsibleifstatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/ServidorServiceImpl.java">
+<violation beginline="1" endline="103" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.service.impl" class="ServidorServiceImpl" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/TipoProcedimentoServiceImpl.java">
+<violation beginline="27" endline="27" begincolumn="99" endcolumn="130" rule="UselessParentheses" ruleset="Code Style" package="ufc.npi.prontuario.service.impl" class="TipoProcedimentoServiceImpl" method="salvar" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/TurmaServiceImpl.java">
+<violation beginline="1" endline="176" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.service.impl" class="TurmaServiceImpl" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
+</violation>
+</file>
+</pmd>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -7,10 +8,8 @@
 	<artifactId>prontuario</artifactId>
 	<version>1.1</version>
 	<packaging>war</packaging>
-<!--
-	<packaging>${packaging.type}</packaging>
-  -->
-	
+	<!-- <packaging>${packaging.type}</packaging> -->
+
 
 	<profiles>
 		<profile>
@@ -30,7 +29,7 @@
 				</dependency>
 			</dependencies>
 		</profile>
-		
+
 		<profile>
 			<id>homo</id>
 			<properties>
@@ -42,10 +41,10 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</dependency>
-				
+
 			</dependencies>
 		</profile>
-		
+
 		<profile>
 			<id>prod</id>
 			<properties>
@@ -86,9 +85,9 @@
 
 	<dependencies>
 		<dependency>
-		    <groupId>net.sourceforge.htmlunit</groupId>
-		    <artifactId>htmlunit</artifactId>
-		    <version>2.23</version>
+			<groupId>net.sourceforge.htmlunit</groupId>
+			<artifactId>htmlunit</artifactId>
+			<version>2.23</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -170,46 +169,59 @@
 			<artifactId>htmlunit</artifactId>
 			<version>2.23</version>
 		</dependency>
-		
-        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-test -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-test</artifactId>
-            <version>4.0.1.RELEASE</version>
-            <scope>test</scope>
-            
-        </dependency>
-        
-        <dependency>
-   			<groupId>org.springframework.boot</groupId>
-   			<artifactId>spring-boot-starter-tomcat</artifactId>
-   			<scope>provided</scope>
-		</dependency>
-		<!-- dependency>
-		    <groupId>org.springframework.test.htmlunit</groupId>
-		    <artifactId>spring-test-htmlunit</artifactId>
-		    <version>1.0.0.RC1</version>
-		</dependency-->
 
-    </dependencies>
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-test -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<version>4.0.1.RELEASE</version>
+			<scope>test</scope>
+
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- dependency> <groupId>org.springframework.test.htmlunit</groupId> <artifactId>spring-test-htmlunit</artifactId> 
+			<version>1.0.0.RC1</version> </dependency -->
+
+	</dependencies>
 
 	<build>
 		<finalName>${artifactId}</finalName>
 		<plugins>
 			<plugin>
-    			<groupId>org.apache.tomcat.maven</groupId>
-    			<artifactId>tomcat7-maven-plugin</artifactId>
-    			<version>2.2</version>
-    			<configuration>
-        			<url>http://localhost:8080/manager/text</url>
-        			<path>/prontuario</path>
-        			<username>admin</username>
-        			<password>admin</password>
-    			</configuration>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<url>http://localhost:8080/manager/text</url>
+					<path>/prontuario</path>
+					<username>admin</username>
+					<password>admin</password>
+				</configuration>
 			</plugin>
-			
-			
-			
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<configuration>
+					<failOnViolation>true</failOnViolation> <!-- this is actually true by default, but can be disabled -->
+					<printFailingErrors>true</printFailingErrors>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
