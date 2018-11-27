@@ -42,7 +42,6 @@ import ufc.npi.prontuario.model.Paciente;
 import ufc.npi.prontuario.model.PacienteAnamnese;
 import ufc.npi.prontuario.model.Registro.Acao;
 import ufc.npi.prontuario.model.Usuario;
-//import ufc.npi.prontuario.model.Registro.*;
 import ufc.npi.prontuario.model.enums.Estado;
 import ufc.npi.prontuario.model.enums.EstadoCivil;
 import ufc.npi.prontuario.model.enums.Raca;
