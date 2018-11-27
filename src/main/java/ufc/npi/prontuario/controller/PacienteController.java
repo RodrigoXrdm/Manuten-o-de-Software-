@@ -1,10 +1,22 @@
 package ufc.npi.prontuario.controller;
 
-import static ufc.npi.prontuario.util.ConfigurationConstants.*;
-import static ufc.npi.prontuario.util.ExceptionSuccessConstants.*;
-
-import static ufc.npi.prontuario.util.PagesConstants.*;
-import static ufc.npi.prontuario.util.RedirectConstants.*;
+import static ufc.npi.prontuario.util.ConfigurationConstants.PERMISSAO_ESTUDANTE;
+import static ufc.npi.prontuario.util.ConfigurationConstants.PERMISSOES_ESTUDANTE_PROFESSOR_ADMINISTRACAO;
+import static ufc.npi.prontuario.util.ExceptionSuccessConstants.ERROR;
+import static ufc.npi.prontuario.util.ExceptionSuccessConstants.SUCCESS;
+import static ufc.npi.prontuario.util.ExceptionSuccessConstants.SUCCESS_CADASTRAR_PACIENTE;
+import static ufc.npi.prontuario.util.ExceptionSuccessConstants.SUCCESS_EDITAR_PACIENTE;
+import static ufc.npi.prontuario.util.ExceptionSuccessConstants.SUCCESS_REALIZAR_ANAMNESE;
+import static ufc.npi.prontuario.util.PagesConstants.FORMULARIO_CADASTRO_PACIENTE;
+import static ufc.npi.prontuario.util.PagesConstants.FORMULARIO_REALIZAR_ANAMNESE;
+import static ufc.npi.prontuario.util.PagesConstants.PAGINA_DETALHES_ANAMNESE_PACIENTE;
+import static ufc.npi.prontuario.util.PagesConstants.PAGINA_DETALHES_PACIENTE;
+import static ufc.npi.prontuario.util.PagesConstants.PAGINA_LISTAGEM_ANAMNESES_PACIENTE;
+import static ufc.npi.prontuario.util.PagesConstants.PAGINA_LISTAGEM_ATENDIMENTOS;
+import static ufc.npi.prontuario.util.PagesConstants.PAGINA_LISTAGEM_PACIENTES;
+import static ufc.npi.prontuario.util.PagesConstants.TABLE_ATENDIMENTOS;
+import static ufc.npi.prontuario.util.RedirectConstants.REDIRECT_CADASTRAR_PACIENTE;
+import static ufc.npi.prontuario.util.RedirectConstants.REDIRECT_LISTAGEM_PACIENTES;
 
 import java.util.List;
 
@@ -12,17 +24,35 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.fasterxml.jackson.annotation.JsonView;
 
 import ufc.npi.prontuario.exception.ProntuarioException;
-import ufc.npi.prontuario.model.*;
-import ufc.npi.prontuario.model.Registro.*;
-import ufc.npi.prontuario.model.enums.*;
-import ufc.npi.prontuario.service.*;
+import ufc.npi.prontuario.model.Anamnese;
+import ufc.npi.prontuario.model.Dente;
+import ufc.npi.prontuario.model.Paciente;
+import ufc.npi.prontuario.model.PacienteAnamnese;
+import ufc.npi.prontuario.model.Registro.Acao;
+import ufc.npi.prontuario.model.Usuario;
+//import ufc.npi.prontuario.model.Registro.*;
+import ufc.npi.prontuario.model.enums.Estado;
+import ufc.npi.prontuario.model.enums.EstadoCivil;
+import ufc.npi.prontuario.model.enums.Raca;
+import ufc.npi.prontuario.model.enums.Sexo;
+import ufc.npi.prontuario.service.AlunoService;
+import ufc.npi.prontuario.service.AnamneseService;
+import ufc.npi.prontuario.service.AtendimentoService;
+import ufc.npi.prontuario.service.DenteService;
+import ufc.npi.prontuario.service.PacienteService;
+import ufc.npi.prontuario.service.RegistroService;
 import ufc.npi.prontuario.view.ProntuarioView;
 
 @Controller
