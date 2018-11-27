@@ -11,7 +11,7 @@ import ufc.npi.prontuario.model.enums.Papel;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
-	Usuario findByEmail(String email);
+	public Usuario findByEmail(String email);
 	
 	public Usuario findByEmailOrMatricula(String email, String matricula);
 
