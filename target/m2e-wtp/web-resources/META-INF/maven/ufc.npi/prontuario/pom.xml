@@ -210,6 +210,9 @@
 				<configuration>
 					<failOnViolation>true</failOnViolation> <!-- this is actually true by default, but can be disabled -->
 					<printFailingErrors>true</printFailingErrors>
+					<rulesets>
+						<ruleset>/myRules.xml</ruleset>
+					</rulesets>
 				</configuration>
 				<executions>
 					<execution>

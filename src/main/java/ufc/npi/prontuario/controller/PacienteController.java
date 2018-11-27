@@ -87,6 +87,7 @@ public class PacienteController {
 
 	@GetMapping("/cadastrar")
 	public ModelAndView paginaCadastroPaciente(Paciente paciente) {
+		int a;
 		ModelAndView modelAndView = new ModelAndView(FORMULARIO_CADASTRO_PACIENTE);
 
 		modelAndView.addObject("sexo", Sexo.values());
