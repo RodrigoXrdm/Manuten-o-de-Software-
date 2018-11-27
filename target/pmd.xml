@@ -2,7 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.8.0" timestamp="2018-11-26T07:48:13.308">
+    version="6.8.0" timestamp="2018-11-27T15:56:26.103">
 <file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/AlunoController.java">
 <violation beginline="1" endline="104" begincolumn="1" endcolumn="1" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="AlunoController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
 Too many static imports may lead to messy code
@@ -42,11 +42,11 @@ Too many static imports may lead to messy code
 </violation>
 </file>
 <file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/PacienteController.java">
-<violation beginline="23" endline="23" begincolumn="1" endcolumn="43" rule="UnusedImports" ruleset="Best Practices" package="ufc.npi.prontuario.controller" class="PacienteController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
-Avoid unused imports such as 'ufc.npi.prontuario.model.Registro'
+<violation beginline="1" endline="256" begincolumn="1" endcolumn="3" rule="TooManyStaticImports" ruleset="Code Style" package="ufc.npi.prontuario.controller" class="PacienteController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#toomanystaticimports" priority="3">
+Too many static imports may lead to messy code
 </violation>
-<violation beginline="24" endline="24" begincolumn="1" endcolumn="40" rule="UnusedImports" ruleset="Best Practices" package="ufc.npi.prontuario.controller" class="PacienteController" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
-Avoid unused imports such as 'ufc.npi.prontuario.model.enums'
+<violation beginline="90" endline="90" begincolumn="21" endcolumn="21" rule="UnusedLocalVariable" ruleset="Best Practices" package="ufc.npi.prontuario.controller" class="PacienteController" method="paginaCadastroPaciente" variable="a" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'a'.
 </violation>
 </file>
 <file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/controller/PeriogramaController.java">
@@ -223,9 +223,6 @@ Unnecessary modifier 'public' on method 'findByNomeContainingIgnoreCase': the me
 </violation>
 </file>
 <file name="/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/repository/UsuarioRepository.java">
-<violation beginline="14" endline="14" begincolumn="16" endcolumn="49" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByEmail" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
-Unnecessary modifier 'public' on method 'findByEmail': the method is declared in an interface type
-</violation>
 <violation beginline="16" endline="16" begincolumn="16" endcolumn="78" rule="UnnecessaryModifier" ruleset="Code Style" package="ufc.npi.prontuario.repository" class="UsuarioRepository" method="findByEmailOrMatricula" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
 Unnecessary modifier 'public' on method 'findByEmailOrMatricula': the method is declared in an interface type
 </violation>
