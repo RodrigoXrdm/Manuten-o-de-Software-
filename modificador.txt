@@ -5,3 +5,6 @@
 5
 6
 7
+
+
+d2f48074b6de5d8c6f2880da58a9c96ebf2df4dc  // token do sonarCloud

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<!-- Pacientes -->
+	<paciente
+		id="1"
+		nome="SARAH LUISA GOMES DE SOUSA LEMOS"
+		nome_da_mae="MARIA LUISA NEGRAO"
+		cpf="85853317636"
+		cns="831327015240007"
+		endereco="Rua. João Cordeiro, 949 / Apto. 1901"
+		bairro="Centro"
+		cep="60110-300"
+		cidade="Fortaleza"
+		estado="CE"
+		estado_civil="SOLTEIRO"
+		nacionalidade="Brasileira"
+		nascimento="1952-02-02 00:00:00"
+		naturalidade="Fortaleza"
+		pais="Brasil"
+		profissao="Médico"
+		raca="BRANCA"
+		responsavel="MARGARIDA FERREIRA CAVACANTE"
+		segundo_telefone="(88) 99999-8888"
+		sexo="F"
+		telefone="(88) 98888-9999" />
+
+	<!-- Aluno -->
+	<aluno
+		id="1"
+		nome="aluno 1"
+		email="aluno1@email.com"
+		matricula="1111"
+		ano_ingresso="2013"
+		semestre_ingresso="1"
+		senha="$04$f.CAvVzvU3ZeaES2mIkh3uc7e6u6pJOh3bGAxGttOuu/r2MzYuvN6" />
+
+
+	<!-- Anamnese -->
+	<anamnese
+		id="1"
+		descricao="Descrição da anamnese 1"
+		nome="anamnese 1"
+		status="FINALIZADA" />
+	<anamnese
+		id="2"
+		descricao="Descrição da anamnese 2"
+		nome="Anamnese 2"
+		status="EM_ANDAMENTO" />
+	<anamnese
+		id="3"
+		descricao="Descrição da anamnese 3"
+		nome="anamnese 3"
+		status="FINALIZADA" />
+
+	<!-- Pergunta -->
+	<pergunta
+		id="1"
+		texto="Texto da pergunta 1"
+		ordem="1"
+		tipo="TEXTO"
+		anamnese_id="1" />
+	<pergunta
+		id="2"
+		texto="Texto da pergunta 2"
+		ordem="2"
+		tipo="TEXTO_E_SIM_OU_NAO"
+		anamnese_id="1" />
+	<pergunta
+		id="3"
+		texto="Texto da pergunta 3"
+		ordem="1"
+		tipo="SIM_OU_NAO"
+		anamnese_id="3" />
+	<pergunta
+		id="4"
+		texto="Texto da pergunta 4"
+		ordem="1"
+		tipo="TEXTO"
+		anamnese_id="2" />
+
+	<!-- Paciente Anamnese -->
+	<paciente_anamnese
+		id="1"
+		data="2018-02-20 00:00:00"
+		descricao="ksjdvbskdvb"
+		anamnese_id="1"
+		paciente_id="1"
+		responsavel_id="1" />
+
+	<!-- Pergunta -->
+	<resposta
+		id="1"
+		opcao="false"
+		texto="fdbdfbdf"
+		paciente_anamnese_id="1"
+		pergunta_id="1" />
+
+
+</dataset>

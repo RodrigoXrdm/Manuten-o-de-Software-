@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<!-- PACIENTES -->
+	<paciente id="1" nome="Paciente 1" cpf="12345678900" nome_da_mae="Mãe do Paciente 1" nascimento="1998-08-08 00:00:00" sexo="M" telefone="(88)88888-8888" />
+	
+	<!-- BOCA -->
+	<boca id="1" paciente_id="1" tipo_estrutura="BOCA" />
+	
+	<!-- ARCADAS -->
+	<arcada id="3" paciente_id="1" aparelho="FIXO" tipo_arcada="SUPERIOR" boca_id="1" tipo_estrutura="ARCADA" />
+	<arcada id="4" paciente_id="1" aparelho="MOVEL" tipo_arcada="INFERIOR" boca_id="1" tipo_estrutura="ARCADA" />
+	
+	<!-- SEXTANTES -->
+	<sextante id="6" paciente_id="1" nome="S1" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	<sextante id="7" paciente_id="1" nome="S2" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	<sextante id="8" paciente_id="1" nome="S3" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	<sextante id="9" paciente_id="1" nome="S4" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	<sextante id="10" paciente_id="1" nome="S5" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	<sextante id="11" paciente_id="1" nome="S6" arcada_id="3" tipo_estrutura="SEXTANTE" />
+	
+	<!-- DENTE -->
+	<dente id="13" paciente_id="1" implante="false" numero="37" presente="true" tipo="PERMANENTE" sextante_id="6" tipo_estrutura="DENTE" />
+	
+	<!-- RAIZ -->
+	<raiz id="16" paciente_id="1" nome="R1" presente="true" dente_id="13" tipo_estrutura="RAIZ" />
+	
+	<!-- FURCA -->
+	<furca id="19" paciente_id="1" face="V" tipo_estrutura="FURCA" />
+
+	<!-- RAIZ FURCA -->
+	<raiz_furca raiz_id="16" furca_id="19" />
+
+	<!-- FACE -->
+	<face id="20" paciente_id="1" nome="O" dente_id="13" tipo_estrutura="FACE" />
+	
+</dataset>

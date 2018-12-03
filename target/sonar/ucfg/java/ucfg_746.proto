@@ -1,0 +1,342 @@
+
+èufc.npi.prontuario.service.impl.FaceServiceImpl#criarFaces(Lufc/npi/prontuario/model/Paciente;Lufc/npi/prontuario/model/Dente;)Ljava/util/List;
+__unknown_file (pacientedente"paramAnnotations*ÍA
+1o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java" "(&èå
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java" "($
+%0"java.util.ArrayList°
+û
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java" "(&
+%1"java.util.ArrayList#<init>()V*
+
+%0ã
+à
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java" "('
+faces"__id*
+
+%0ôñ
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java$ $(
+%2"ufc.npi.prontuario.model.Face´
+®
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java$ $(
+%3"'ufc.npi.prontuario.model.Face#<init>()V*
+
+%2ê
+ç
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java$ $(
+
+vestibular"__id*
+
+%2Ó
+Î
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java% %("
+%4"Tufc.npi.prontuario.model.Estrutura#setPaciente(Lufc/npi/prontuario/model/Paciente;)V*
+
+
+vestibular*
+
+
+paciente‡
+›
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java& &(
+%5"Iufc.npi.prontuario.model.Face#setDente(Lufc/npi/prontuario/model/Dente;)V*
+
+
+vestibular*	
+
+dente¥
+±
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java' '(
+%6"__id*2*0)
+'ufc.npi.prontuario.model.enums.NomeFace"
+VÂ
+‚
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java' '( 
+%7"Qufc.npi.prontuario.model.Face#setNome(Lufc/npi/prontuario/model/enums/NomeFace;)V*
+
+
+vestibular*
+
+%6ôñ
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java) )(
+%8"ufc.npi.prontuario.model.Face´
+®
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java) )(
+%9"'ufc.npi.prontuario.model.Face#<init>()V*
+
+%8ç
+ä
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java) )(	
+lingual"__id*
+
+%8Ï
+È
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java* *(
+%10"Tufc.npi.prontuario.model.Estrutura#setPaciente(Lufc/npi/prontuario/model/Paciente;)V*
+	
+lingual*
+
+
+pacienteﬁ
+€
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java+ +(
+%11"Iufc.npi.prontuario.model.Face#setDente(Lufc/npi/prontuario/model/Dente;)V*
+	
+lingual*	
+
+denteµ
+≤
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java, ,(
+%12"__id*2*0)
+'ufc.npi.prontuario.model.enums.NomeFace"
+L‰
+·
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java, ,(
+%13"Qufc.npi.prontuario.model.Face#setNome(Lufc/npi/prontuario/model/enums/NomeFace;)V*
+	
+lingual*
+
+%12öó
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java. .(
+%14"ufc.npi.prontuario.model.Face≠
+™
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java. .(
+%15"'ufc.npi.prontuario.model.Face#<init>()V*
+
+%14ç
+ä
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java. .(
+mesial"__id*
+
+%14Î
+Ë
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java/ /(
+%16"Tufc.npi.prontuario.model.Estrutura#setPaciente(Lufc/npi/prontuario/model/Paciente;)V*
+
+
+mesial*
+
+
+paciente›
+⁄
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java0 0(
+%17"Iufc.npi.prontuario.model.Face#setDente(Lufc/npi/prontuario/model/Dente;)V*
+
+
+mesial*	
+
+denteµ
+≤
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java1 1(
+%18"__id*2*0)
+'ufc.npi.prontuario.model.enums.NomeFace"
+M„
+‡
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java1 1(
+%19"Qufc.npi.prontuario.model.Face#setNome(Lufc/npi/prontuario/model/enums/NomeFace;)V*
+
+
+mesial*
+
+%18öó
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java3 3(
+%20"ufc.npi.prontuario.model.Face≠
+™
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java3 3(
+%21"'ufc.npi.prontuario.model.Face#<init>()V*
+
+%20ç
+ä
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java3 3(
+distal"__id*
+
+%20Î
+Ë
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java4 4(
+%22"Tufc.npi.prontuario.model.Estrutura#setPaciente(Lufc/npi/prontuario/model/Paciente;)V*
+
+
+distal*
+
+
+paciente›
+⁄
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java5 5(
+%23"Iufc.npi.prontuario.model.Face#setDente(Lufc/npi/prontuario/model/Dente;)V*
+
+
+distal*	
+
+denteµ
+≤
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java6 6(
+%24"__id*2*0)
+'ufc.npi.prontuario.model.enums.NomeFace"
+D„
+‡
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java6 6(
+%25"Qufc.npi.prontuario.model.Face#setNome(Lufc/npi/prontuario/model/enums/NomeFace;)V*
+
+
+distal*
+
+%24öó
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java8 8(
+%26"ufc.npi.prontuario.model.Face≠
+™
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java8 8(
+%27"'ufc.npi.prontuario.model.Face#<init>()V*
+
+%26é
+ã
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java8 8(	
+oclusal"__id*
+
+%26Ï
+È
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java9 9(
+%28"Tufc.npi.prontuario.model.Estrutura#setPaciente(Lufc/npi/prontuario/model/Paciente;)V*
+	
+oclusal*
+
+
+pacienteﬁ
+€
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java: :(
+%29"Iufc.npi.prontuario.model.Face#setDente(Lufc/npi/prontuario/model/Dente;)V*
+	
+oclusal*	
+
+denteµ
+≤
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java; ;(
+%30"__id*2*0)
+'ufc.npi.prontuario.model.enums.NomeFace"
+O‰
+·
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java; ;(
+%31"Qufc.npi.prontuario.model.Face#setNome(Lufc/npi/prontuario/model/enums/NomeFace;)V*
+	
+oclusal*
+
+%30ø
+º
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java= =(
+%32"'java.util.List#add(Ljava/lang/Object;)Z*	
+
+faces*
+
+
+vestibularº
+π
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java> >(
+%33"'java.util.List#add(Ljava/lang/Object;)Z*	
+
+faces*
+	
+lingualª
+∏
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java? ?(
+%34"'java.util.List#add(Ljava/lang/Object;)Z*	
+
+faces*
+
+
+mesialª
+∏
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java@ @(
+%35"'java.util.List#add(Ljava/lang/Object;)Z*	
+
+faces*
+
+
+distalº
+π
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.javaA A(
+%36"'java.util.List#add(Ljava/lang/Object;)Z*	
+
+faces*
+	
+oclusal"|
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.javaC C(	
+
+faces*ñ
+paramAnnotationso
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java! !(=≠
+™
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java   (
+
+%37"
+__annotate*
+java.lang.Override*
+
+
+pacienteó
+î
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java!' !(/
+
+paciente"__annotation*
+
+%37™
+ß
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java   (
+
+%38"
+__annotate*
+java.lang.Override*	
+
+denteî
+ë
+o
+e/home/rodrigo/Documents/prontuario/src/main/java/ufc/npi/prontuario/service/impl/FaceServiceImpl.java!7 !(<
+dente"__annotation*
+
+%38*
+1

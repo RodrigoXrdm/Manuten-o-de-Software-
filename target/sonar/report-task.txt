@@ -1,0 +1,7 @@
+organization=rodrigoxrdm-github
+projectKey=RodrigoXrdm_Manuten-o-de-Software-
+serverUrl=https://sonarcloud.io
+serverVersion=7.5.0.19741
+dashboardUrl=https://sonarcloud.io/dashboard?id=RodrigoXrdm_Manuten-o-de-Software-
+ceTaskId=AWd1hqQG_dks3zB7OyUd
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWd1hqQG_dks3zB7OyUd
