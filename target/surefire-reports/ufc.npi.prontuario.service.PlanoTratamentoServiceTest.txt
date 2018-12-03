@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ufc.npi.prontuario.service.PlanoTratamentoServiceTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.367 sec - in ufc.npi.prontuario.service.PlanoTratamentoServiceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.363 sec - in ufc.npi.prontuario.service.PlanoTratamentoServiceTest

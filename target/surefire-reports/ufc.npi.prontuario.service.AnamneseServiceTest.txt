@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ufc.npi.prontuario.service.AnamneseServiceTest
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.129 sec - in ufc.npi.prontuario.service.AnamneseServiceTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.1 sec - in ufc.npi.prontuario.service.AnamneseServiceTest
